@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4CD8474812736EC300F74A59 /* AccentuateUs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */; };
 		4CD847A71273729D00F74A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD847A61273729D00F74A59 /* Foundation.framework */; };
-		4CD847F912738B7000F74A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD847F812738B7000F74A59 /* main.m */; };
 		4CD8480C12738BD000F74A59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD8480B12738BD000F74A59 /* Cocoa.framework */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -144,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD8474812736EC300F74A59 /* AccentuateUs.m in Sources */,
-				4CD847F912738B7000F74A59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +171,9 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Services";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "accentuateus-osx-service";
+				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
@@ -186,7 +186,9 @@
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Services";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "accentuateus-osx-service";
+				WARNING_CFLAGS = "";
 				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
@@ -201,6 +203,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "accentuateus-osx-service";
 				SDKROOT = macosx10.6;
 			};
 			name = Debug;
@@ -213,6 +216,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "accentuateus-osx-service";
 				SDKROOT = macosx10.6;
 			};
 			name = Release;

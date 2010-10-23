@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CD8474812736EC300F74A59 /* AccentuateUs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */; };
+		4CD847A71273729D00F74A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD847A61273729D00F74A59 /* Foundation.framework */; };
+		4CD847F912738B7000F74A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD847F812738B7000F74A59 /* main.m */; };
+		4CD8480C12738BD000F74A59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD8480B12738BD000F74A59 /* Cocoa.framework */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -14,7 +18,12 @@
 /* Begin PBXFileReference section */
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		8D576316048677EA00EA77CD /* accentuateus-osx-service.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "accentuateus-osx-service.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD8474612736EC300F74A59 /* AccentuateUs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccentuateUs.h; sourceTree = "<group>"; };
+		4CD8474712736EC300F74A59 /* AccentuateUs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccentuateUs.m; sourceTree = "<group>"; };
+		4CD847A61273729D00F74A59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4CD847F812738B7000F74A59 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CD8480B12738BD000F74A59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D576316048677EA00EA77CD /* accentuateus-osx-service.service */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "accentuateus-osx-service.service"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -24,6 +33,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+				4CD847A71273729D00F74A59 /* Foundation.framework in Frameworks */,
+				4CD8480C12738BD000F74A59 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +55,9 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				4CD847A61273729D00F74A59 /* Foundation.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				4CD8480B12738BD000F74A59 /* Cocoa.framework */,
 			);
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -61,6 +74,9 @@
 		08FB77AFFE84173DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4CD8474612736EC300F74A59 /* AccentuateUs.h */,
+				4CD8474712736EC300F74A59 /* AccentuateUs.m */,
+				4CD847F812738B7000F74A59 /* main.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -68,7 +84,7 @@
 		19C28FB6FE9D52B211CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D576316048677EA00EA77CD /* accentuateus-osx-service.bundle */,
+				8D576316048677EA00EA77CD /* accentuateus-osx-service.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +107,7 @@
 			name = "accentuateus-osx-service";
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = "accentuateus-osx-service";
-			productReference = 8D576316048677EA00EA77CD /* accentuateus-osx-service.bundle */;
+			productReference = 8D576316048677EA00EA77CD /* accentuateus-osx-service.service */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -127,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD8474812736EC300F74A59 /* AccentuateUs.m in Sources */,
+				4CD847F912738B7000F74A59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +172,9 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				INSTALL_PATH = "$(HOME)/Library/Services";
 				PRODUCT_NAME = "accentuateus-osx-service";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
 		};
@@ -167,9 +185,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				INSTALL_PATH = "$(HOME)/Library/Services";
 				PRODUCT_NAME = "accentuateus-osx-service";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};

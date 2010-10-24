@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4CD848A112739B7200F74A59</string>
+						<string>4CD84A471273D13300F74A59</string>
 						<key>history</key>
 						<array>
 							<string>4CD847BD1273882F00F74A59</string>
@@ -235,7 +235,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>-2 384 720 644 0 0 1680 1028 </string>
+				<string>-1 384 720 644 0 0 1680 1028 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -256,10 +256,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4CD848A212739B7200F74A59</string>
+						<string>4CD84A481273D13300F74A59</string>
 						<key>history</key>
 						<array>
-							<string>4CD848351273900C00F74A59</string>
+							<string>4CD849491273A96C00F74A59</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -271,11 +271,11 @@
 			<key>Geometry</key>
 			<dict>
 				<key>Frame</key>
-				<string>{{0, 20}, {678, 411}}</string>
+				<string>{{0, 20}, {960, 603}}</string>
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>22 365 678 452 0 0 1680 1028 </string>
+				<string>720 384 960 644 0 0 1680 1028 </string>
 			</dict>
 		</dict>
 	</array>
@@ -312,8 +312,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -352,11 +350,13 @@
 								<string>089C166AFE841209C02AAC07</string>
 								<string>08FB77AFFE84173DC02AAC07</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>1C37FAAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>0</integer>
+									<integer>8</integer>
+									<integer>7</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -405,14 +405,13 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4CD848A012739B7200F74A59</string>
+										<string>4CD84A461273D13300F74A59</string>
 										<key>history</key>
 										<array>
 											<string>4CD847B91273882F00F74A59</string>
-											<string>4CD8482F12738FF100F74A59</string>
-											<string>4CD8484E1273912200F74A59</string>
-											<string>4CD8484F1273912200F74A59</string>
-											<string>4CD8487A1273951100F74A59</string>
+											<string>4CD849361273A78400F74A59</string>
+											<string>4CD84A181273CE8800F74A59</string>
+											<string>4CD84A191273CE8800F74A59</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -426,18 +425,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {794, 54}}</string>
+								<string>{{0, 0}, {794, 80}}</string>
 								<key>RubberWindowFrame</key>
 								<string>720 103 960 225 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>54pt</string>
+							<string>80pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>125pt</string>
+							<string>99pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -451,9 +450,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {794, 98}}</string>
-										<key>RubberWindowFrame</key>
-										<string>720 103 960 225 0 0 1680 1028 </string>
+										<string>{{10, 27}, {794, 72}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -507,7 +504,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {794, 98}}</string>
+										<string>{{10, 27}, {794, 72}}</string>
+										<key>RubberWindowFrame</key>
+										<string>720 103 960 225 0 0 1680 1028 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>

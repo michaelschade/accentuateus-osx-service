@@ -202,24 +202,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>4CD8483B1273905000F74A59</string>
+				<string>4CD84AA41273D5AC00F74A59</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>Info.plist</string>
+				<string>AccentuateUs.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>4CD8483C1273905000F74A59</string>
+						<string>4CD84AA51273D5AC00F74A59</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>Info.plist</string>
+						<string>AccentuateUs.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4CD84A6A1273D2EA00F74A59</string>
+						<string>4CD84AB31273D72E00F74A59</string>
 						<key>history</key>
 						<array>
-							<string>4CD84A5B1273D25300F74A59</string>
+							<string>4CD84AA01273D5AB00F74A59</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -236,46 +236,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>0 384 720 644 0 0 1680 1028 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>4CD847B2127372D400F74A59</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>AccentuateUs.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>4CD847B3127372D400F74A59</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>AccentuateUs.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>4CD84A6B1273D2EA00F74A59</string>
-						<key>history</key>
-						<array>
-							<string>4CD847BD1273882F00F74A59</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {720, 603}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>-1 384 720 644 0 0 1680 1028 </string>
 			</dict>
 		</dict>
 	</array>
@@ -392,7 +352,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>4CD8473212736D7700F74A59</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AccentuateUs.m</string>
+								<string>AccentuateUs.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -400,17 +360,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>4CD8473312736D7700F74A59</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AccentuateUs.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>4CD84A691273D2EA00F74A59</string>
+										<string>AccentuateUs.h</string>
 										<key>history</key>
 										<array>
 											<string>4CD847B91273882F00F74A59</string>
 											<string>4CD849361273A78400F74A59</string>
-											<string>4CD84A181273CE8800F74A59</string>
-											<string>4CD84A191273CE8800F74A59</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -424,18 +378,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {794, 80}}</string>
+								<string>{{0, 0}, {794, 68}}</string>
 								<key>RubberWindowFrame</key>
 								<string>720 103 960 225 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>80pt</string>
+							<string>68pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>99pt</string>
+							<string>111pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -451,7 +405,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {794, 72}}</string>
+										<string>{{10, 27}, {794, 84}}</string>
 										<key>RubberWindowFrame</key>
 										<string>720 103 960 225 0 0 1680 1028 </string>
 									</dict>
@@ -535,11 +489,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4CD8473412736D7700F74A59</string>
+				<string>4CD84AA11273D5AC00F74A59</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>4CD8473512736D7700F74A59</string>
+				<string>4CD84AA21273D5AC00F74A59</string>
 				<string>4CD8473212736D7700F74A59</string>
-				<string>4CD8473612736D7700F74A59</string>
+				<string>4CD84AA31273D5AC00F74A59</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -729,9 +683,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4CD847B2127372D400F74A59</string>
 		<string>/Users/michael/accentuateus-osx-service/accentuateus-osx-service.xcodeproj</string>
-		<string>4CD8483B1273905000F74A59</string>
+		<string>4CD84AA41273D5AC00F74A59</string>
 	</array>
 	<key>WindowString</key>
 	<string>720 103 960 225 0 0 1680 1028 </string>

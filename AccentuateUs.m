@@ -1,10 +1,21 @@
-//
-//  AccentuateUs.m
-//  accentuateus-osx-service
-//
-//  Created by Michael Schade on 10/23/10.
-//  Copyright 2010 Spearhead Development LLC. All rights reserved.
-//
+/*
+ Copyright 2010 Spearhead Development, L.L.C. <http://www.sddomain.com/>
+ 
+ This file is part of Accentuate.us.
+ 
+ Accentuate.us is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ Accentuate.us is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with Accentuate.us. If not, see <http://www.gnu.org/licenses/>.
+ */
 
 #import <Foundation/Foundation.h>
 #import "AccentuateUs.h"
@@ -12,48 +23,35 @@
 @implementation AccentuateUs
 
 - (void)accentuate:(NSPasteboard *)pboard
-          userData:(NSString *)data // typed as what we handle
-             error:(NSString **)error
-{
-	NSString *pboardString;
-	NSString *newString;
+          userData:(NSString *)data
+             error:(NSString **)error {
+	NSString *text;
 	NSArray *types;
     
 	types = [pboard types];
 	
-	// if there's a problem with the data passed to this method
-	if(![types containsObject:NSStringPboardType] ||
-       !(pboardString = [pboard stringForType:NSStringPboardType]))
-	{
+	// Problem with supplied data
+	if(![types containsObject:NSStringPboardType]
+       || !(text = [pboard stringForType:NSStringPboardType])) {
 		*error = NSLocalizedString(@"Error: Pasteboard doesn't contain a string.",
                                    @"Pasteboard couldn't give a string.");
-		// if there's a problem then it'll be sure to tell us!
 		return;
 	}
     
-	// here is where our capitalizing code goes
-	newString = [pboardString capitalizedString]; // it's that easy!
+	text = [text capitalizedString];
     
-	// the next block checks to see if there was an error while capitalizing
-	if(!newString)
-	{
-		*error = NSLocalizedString(@"Error: Couldn't capitalize string $@.",
+	// Error accentuating?
+	if(!text) {
+		*error = NSLocalizedString(@"Error: Couldn't accentuate text $@.",
                                    @"Couldn't perform service operation.");
-		// again, it lets us know of any trouble
 		return;
 	}
     
-	// the next bit tells the system what it's returning
+    // Set accentuated text
 	types = [NSArray arrayWithObject:NSStringPboardType];
-    
     [pboard clearContents];
 	[pboard declareTypes:types owner:nil];
-	
-	// and then this sets the string to our capitalized version
-	//[pboard setString:newString forType:NSStringPboardType];
-    [pboard writeObjects:[NSArray arrayWithObject:newString]];
-    
-    NSLog(@"pboard: %@", [pboard stringForType:NSStringPboardType]);
+    [pboard writeObjects:[NSArray arrayWithObject:text]];
     
 	return;
 }
@@ -62,13 +60,11 @@
 
 int main(int argc, char *argv[]) {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    NSLog(@"Initialize.");
     AccentuateUs *service = [[AccentuateUs alloc] init];
     NSRegisterServicesProvider(service, @"accentuateus-osx-service");
-    NSUpdateDynamicServices();
     
     NS_DURING [[NSRunLoop currentRunLoop] run];
-    NS_HANDLER NSLog(@".");
+    NS_HANDLER
     NS_ENDHANDLER
     
     [service release];

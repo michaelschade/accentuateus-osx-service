@@ -17,7 +17,6 @@
  along with Accentuate.us. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#import <Foundation/Foundation.h>
 #import "AccentuateUs.h"
 
 @implementation AccentuateUs

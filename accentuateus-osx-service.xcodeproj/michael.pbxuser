@@ -385,6 +385,11 @@
 			4CD84AAD1273D60800F74A59 /* PBXTextBookmark */ = 4CD84AAD1273D60800F74A59 /* PBXTextBookmark */;
 			4CD84AB21273D6FC00F74A59 /* PBXTextBookmark */ = 4CD84AB21273D6FC00F74A59 /* PBXTextBookmark */;
 			4CD84AB31273D72E00F74A59 /* PBXTextBookmark */ = 4CD84AB31273D72E00F74A59 /* PBXTextBookmark */;
+			4CD84AC81273D7BB00F74A59 /* PBXTextBookmark */ = 4CD84AC81273D7BB00F74A59 /* PBXTextBookmark */;
+			4CD84AC91273D7BB00F74A59 /* PBXTextBookmark */ = 4CD84AC91273D7BB00F74A59 /* PBXTextBookmark */;
+			4CD84ACA1273D7BB00F74A59 /* PBXTextBookmark */ = 4CD84ACA1273D7BB00F74A59 /* PBXTextBookmark */;
+			4CD84ACB1273D7BB00F74A59 /* PBXTextBookmark */ = 4CD84ACB1273D7BB00F74A59 /* PBXTextBookmark */;
+			4CD84ACC1273D7BB00F74A59 /* PBXTextBookmark */ = 4CD84ACC1273D7BB00F74A59 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4CD8473812736D7700F74A59 /* Source Control */;
 		userBuildSettings = {
@@ -413,17 +418,17 @@
 	};
 	4CD8474612736EC300F74A59 /* AccentuateUs.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {733, 195}}";
-			sepNavSelRange = "{192, 0}";
-			sepNavVisRange = "{167, 65}";
+			sepNavIntBoundsRect = "{{0, 0}, {733, 338}}";
+			sepNavSelRange = "{745, 0}";
+			sepNavVisRange = "{811, 6}";
 			sepNavWindowFrame = "{{22, 98}, {678, 508}}";
 		};
 	};
 	4CD8474712736EC300F74A59 /* AccentuateUs.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {661, 897}}";
-			sepNavSelRange = "{806, 0}";
-			sepNavVisRange = "{0, 1410}";
+			sepNavIntBoundsRect = "{{0, 0}, {661, 949}}";
+			sepNavSelRange = "{2001, 0}";
+			sepNavVisRange = "{960, 1191}";
 		};
 	};
 	4CD8474912736EC600F74A59 /* PBXBookmark */ = {
@@ -435,7 +440,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 8";
 		rLen = 0;
-		rLoc = 167;
+		rLoc = 746;
 		rType = 0;
 		vrLen = 231;
 		vrLoc = 0;
@@ -465,7 +470,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 9";
 		rLen = 0;
-		rLoc = 780;
+		rLoc = 746;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 0;
@@ -485,7 +490,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 42";
 		rLen = 0;
-		rLoc = 2135;
+		rLoc = 2885;
 		rType = 0;
 		vrLen = 242;
 		vrLoc = 1059;
@@ -515,7 +520,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 9";
 		rLen = 0;
-		rLoc = 780;
+		rLoc = 746;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 0;
@@ -525,7 +530,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 19";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 0;
@@ -545,7 +550,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 16";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 315;
 		vrLoc = 0;
@@ -565,7 +570,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 17";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 329;
 		vrLoc = 0;
@@ -589,7 +594,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 15";
 		rLen = 0;
-		rLoc = 238;
+		rLoc = 817;
 		rType = 0;
 		vrLen = 238;
 		vrLoc = 0;
@@ -599,7 +604,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 12";
 		rLen = 0;
-		rLoc = 1798;
+		rLoc = 1764;
 		rType = 0;
 		vrLen = 314;
 		vrLoc = 0;
@@ -619,7 +624,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 14";
 		rLen = 0;
-		rLoc = 231;
+		rLoc = 810;
 		rType = 0;
 		vrLen = 238;
 		vrLoc = 0;
@@ -629,7 +634,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 15";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 291;
 		vrLoc = 0;
@@ -649,7 +654,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 15";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 291;
 		vrLoc = 0;
@@ -669,7 +674,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 18";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 0;
@@ -694,7 +699,7 @@
 		comments = "Statically allocated instance of Objective-C class 'AccentuateUs'";
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		rLen = 0;
-		rLoc = 73;
+		rLoc = 72;
 		rType = 1;
 	};
 	4CD847E712738A6E00F74A59 /* PBXTextBookmark */ = {
@@ -702,7 +707,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 17";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 129;
 		vrLoc = 264;
@@ -712,7 +717,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 18";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 433;
 		vrLoc = 0;
@@ -722,7 +727,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 11";
 		rLen = 0;
-		rLoc = 227;
+		rLoc = 806;
 		rType = 0;
 		vrLen = 238;
 		vrLoc = 0;
@@ -732,7 +737,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 17";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 131;
 		vrLoc = 264;
@@ -742,7 +747,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 17";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 435;
 		vrLoc = 0;
@@ -752,7 +757,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 18";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 156;
 		vrLoc = 264;
@@ -762,7 +767,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 27";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 668;
 		vrLoc = 0;
@@ -772,7 +777,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 18";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 156;
 		vrLoc = 264;
@@ -782,7 +787,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 18";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 0;
@@ -800,7 +805,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 14";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 5;
 		vrLoc = 257;
@@ -830,7 +835,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 16";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 0;
@@ -850,7 +855,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 16";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 0;
@@ -870,7 +875,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 16";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 0;
@@ -890,7 +895,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 19";
 		rLen = 0;
-		rLoc = 872;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 0;
@@ -925,7 +930,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 19";
 		rLen = 0;
-		rLoc = 872;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 0;
@@ -948,7 +953,7 @@
 		isa = PBXTextBookmark;
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		rLen = 0;
-		rLoc = 2147484499;
+		rLoc = 2903;
 		rType = 0;
 	};
 	4CD8482512738E8100F74A59 /* PBXTextBookmark */ = {
@@ -956,7 +961,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 4";
 		rLen = 0;
-		rLoc = 170;
+		rLoc = 920;
 		rType = 0;
 		vrLen = 67;
 		vrLoc = 142;
@@ -966,7 +971,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 52";
 		rLen = 0;
-		rLoc = 1539;
+		rLoc = 2289;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 1210;
@@ -976,7 +981,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 19";
 		rLen = 0;
-		rLoc = 872;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 0;
@@ -986,7 +991,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 4";
 		rLen = 0;
-		rLoc = 170;
+		rLoc = 920;
 		rType = 0;
 		vrLen = 67;
 		vrLoc = 142;
@@ -996,7 +1001,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 52";
 		rLen = 0;
-		rLoc = 1539;
+		rLoc = 2289;
 		rType = 0;
 		vrLen = 769;
 		vrLoc = 1210;
@@ -1006,7 +1011,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 19";
 		rLen = 0;
-		rLoc = 872;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 0;
@@ -1016,7 +1021,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 4";
 		rLen = 0;
-		rLoc = 170;
+		rLoc = 920;
 		rType = 0;
 		vrLen = 67;
 		vrLoc = 142;
@@ -1046,7 +1051,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 9";
 		rLen = 0;
-		rLoc = 780;
+		rLoc = 746;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 0;
@@ -1070,7 +1075,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 10";
 		rLen = 0;
-		rLoc = 352;
+		rLoc = 1102;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1080,7 +1085,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 9";
 		rLen = 0;
-		rLoc = 780;
+		rLoc = 746;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 0;
@@ -1100,7 +1105,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 31";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1110,7 +1115,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1130,7 +1135,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 62;
 		vrLoc = 168;
@@ -1140,7 +1145,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1150,7 +1155,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 31";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1160,7 +1165,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1170,7 +1175,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1180,7 +1185,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1190,7 +1195,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 31";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1200,7 +1205,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1210,7 +1215,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1220,7 +1225,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1230,7 +1235,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 31";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1240,7 +1245,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1250,7 +1255,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1260,7 +1265,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 31";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1270,7 +1275,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1280,7 +1285,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1290,7 +1295,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 31";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1300,7 +1305,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1310,7 +1315,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1320,7 +1325,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 22";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1763;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1330,7 +1335,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1340,7 +1345,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1350,7 +1355,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 24";
 		rLen = 0;
-		rLoc = 1803;
+		rLoc = 1769;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1360,7 +1365,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1370,7 +1375,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1380,7 +1385,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 24";
 		rLen = 0;
-		rLoc = 1803;
+		rLoc = 1769;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1390,7 +1395,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1400,7 +1405,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1410,7 +1415,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 24";
 		rLen = 0;
-		rLoc = 1803;
+		rLoc = 1769;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1420,7 +1425,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1430,7 +1435,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 41";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1440,7 +1445,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 21";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 1016;
 		vrLoc = 0;
@@ -1450,7 +1455,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1460,7 +1465,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 41";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1470,7 +1475,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 30";
 		rLen = 0;
-		rLoc = 2027;
+		rLoc = 1993;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 0;
@@ -1480,7 +1485,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1490,7 +1495,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1500,7 +1505,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 28";
 		rLen = 0;
-		rLoc = 1839;
+		rLoc = 1805;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 0;
@@ -1510,7 +1515,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1520,7 +1525,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 43";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1530,7 +1535,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 32";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 0;
@@ -1540,7 +1545,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1550,7 +1555,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1560,7 +1565,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 20";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 0;
@@ -1570,7 +1575,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1580,7 +1585,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1590,7 +1595,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 20";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 0;
@@ -1600,7 +1605,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1610,7 +1615,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1620,7 +1625,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 29";
 		rLen = 0;
-		rLoc = 2027;
+		rLoc = 1993;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1630,7 +1635,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1640,7 +1645,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 44;
 		vrLoc = 257;
@@ -1650,7 +1655,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 4";
 		rLen = 0;
-		rLoc = 170;
+		rLoc = 920;
 		rType = 0;
 		vrLen = 45;
 		vrLoc = 164;
@@ -1660,7 +1665,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 70;
 		vrLoc = 1450;
@@ -1670,7 +1675,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 29";
 		rLen = 0;
-		rLoc = 2027;
+		rLoc = 1993;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1680,7 +1685,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1690,7 +1695,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 62;
 		vrLoc = 168;
@@ -1700,7 +1705,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 70;
 		vrLoc = 1450;
@@ -1710,7 +1715,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 207;
 		vrLoc = 1672;
@@ -1720,7 +1725,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 29";
 		rLen = 0;
-		rLoc = 2027;
+		rLoc = 1993;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 0;
@@ -1730,7 +1735,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1740,7 +1745,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 60";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 207;
 		vrLoc = 1672;
@@ -1750,7 +1755,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 56";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 102;
 		vrLoc = 1628;
@@ -1760,7 +1765,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 33";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 0;
@@ -1770,7 +1775,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1780,7 +1785,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 60";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 107;
 		vrLoc = 1692;
@@ -1790,7 +1795,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 33";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 0;
@@ -1800,7 +1805,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1810,7 +1815,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 60";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 107;
 		vrLoc = 1692;
@@ -1820,7 +1825,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 39";
 		rLen = 0;
-		rLoc = 2121;
+		rLoc = 2087;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 0;
@@ -1830,7 +1835,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1840,7 +1845,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 60";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 107;
 		vrLoc = 1692;
@@ -1850,7 +1855,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 39";
 		rLen = 0;
-		rLoc = 2121;
+		rLoc = 2087;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 0;
@@ -1860,7 +1865,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1870,7 +1875,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 60";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 107;
 		vrLoc = 1692;
@@ -1880,7 +1885,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 39";
 		rLen = 0;
-		rLoc = 2121;
+		rLoc = 2087;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 0;
@@ -1890,7 +1895,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1900,7 +1905,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 60";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 107;
 		vrLoc = 1692;
@@ -1910,7 +1915,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 29";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 0;
@@ -1920,7 +1925,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1930,7 +1935,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 59";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 107;
 		vrLoc = 1692;
@@ -1940,7 +1945,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 28";
 		rLen = 0;
-		rLoc = 1903;
+		rLoc = 1869;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 0;
@@ -1950,7 +1955,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1960,7 +1965,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 59";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 107;
 		vrLoc = 1692;
@@ -1970,7 +1975,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 32";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 1981;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 0;
@@ -1980,7 +1985,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -1990,7 +1995,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 56";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 103;
 		vrLoc = 1574;
@@ -2000,7 +2005,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 32";
 		rLen = 0;
-		rLoc = 2015;
+		rLoc = 1981;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 0;
@@ -2010,7 +2015,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 0;
@@ -2020,7 +2025,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 14";
 		rLen = 0;
-		rLoc = 499;
+		rLoc = 1249;
 		rType = 0;
 		vrLen = 135;
 		vrLoc = 1831;
@@ -2030,7 +2035,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 35";
 		rLen = 0;
-		rLoc = 2116;
+		rLoc = 2082;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 0;
@@ -2040,7 +2045,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 0;
@@ -2050,7 +2055,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 14";
 		rLen = 0;
-		rLoc = 499;
+		rLoc = 1249;
 		rType = 0;
 		vrLen = 135;
 		vrLoc = 1831;
@@ -2060,7 +2065,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 35";
 		rLen = 0;
-		rLoc = 2116;
+		rLoc = 2082;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 0;
@@ -2070,7 +2075,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 0;
@@ -2080,7 +2085,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 14";
 		rLen = 0;
-		rLoc = 499;
+		rLoc = 1249;
 		rType = 0;
 		vrLen = 135;
 		vrLoc = 1831;
@@ -2090,7 +2095,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2100,7 +2105,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2110,7 +2115,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 43";
 		rLen = 0;
-		rLoc = 2185;
+		rLoc = 2151;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 0;
@@ -2120,7 +2125,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 0;
@@ -2130,7 +2135,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2140,7 +2145,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 8";
 		rLen = 0;
-		rLoc = 302;
+		rLoc = 1052;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 0;
@@ -2150,7 +2155,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 878;
 		vrLoc = 1067;
@@ -2160,7 +2165,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 16";
 		rLen = 0;
-		rLoc = 872;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 0;
@@ -2170,7 +2175,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2180,7 +2185,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 22";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 0;
@@ -2190,7 +2195,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 878;
 		vrLoc = 1067;
@@ -2200,7 +2205,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2210,7 +2215,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2220,7 +2225,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 33";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1063;
 		vrLoc = 0;
@@ -2230,7 +2235,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2240,7 +2245,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2250,7 +2255,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 31";
 		rLen = 0;
-		rLoc = 1903;
+		rLoc = 1869;
 		rType = 0;
 		vrLen = 1090;
 		vrLoc = 0;
@@ -2260,7 +2265,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2270,7 +2275,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2280,7 +2285,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 32";
 		rLen = 0;
-		rLoc = 1914;
+		rLoc = 1880;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 3;
@@ -2290,7 +2295,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2300,7 +2305,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2310,7 +2315,7 @@
 		comments = "'return' with no value, in function returning non-void";
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		rLen = 1;
-		rLoc = 72;
+		rLoc = 71;
 		rType = 1;
 	};
 	4CD8495E1273B63C00F74A59 /* PBXTextBookmark */ = {
@@ -2318,7 +2323,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 14;
-		rLoc = 2170;
+		rLoc = 2136;
 		rType = 0;
 		vrLen = 56;
 		vrLoc = 1015;
@@ -2328,7 +2333,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 22";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1761;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 0;
@@ -2338,7 +2343,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2348,7 +2353,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 80;
 		vrLoc = 992;
@@ -2358,7 +2363,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 0;
@@ -2368,7 +2373,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2378,7 +2383,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 80;
 		vrLoc = 992;
@@ -2388,7 +2393,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 35";
 		rLen = 0;
-		rLoc = 2116;
+		rLoc = 2082;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 0;
@@ -2398,7 +2403,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2408,7 +2413,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 80;
 		vrLoc = 992;
@@ -2418,7 +2423,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 35";
 		rLen = 0;
-		rLoc = 2116;
+		rLoc = 2082;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 0;
@@ -2428,7 +2433,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2489,7 +2494,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 80;
 		vrLoc = 992;
@@ -2499,7 +2504,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 41";
 		rLen = 0;
-		rLoc = 2169;
+		rLoc = 2135;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 0;
@@ -2509,7 +2514,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 492;
@@ -2519,7 +2524,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 80;
 		vrLoc = 992;
@@ -2529,7 +2534,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 34";
 		rLen = 0;
-		rLoc = 1084;
+		rLoc = 1834;
 		rType = 0;
 		vrLen = 1260;
 		vrLoc = 492;
@@ -2539,7 +2544,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 41";
 		rLen = 0;
-		rLoc = 2169;
+		rLoc = 2135;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 0;
@@ -2549,7 +2554,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 80;
 		vrLoc = 992;
@@ -2559,7 +2564,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2569,7 +2574,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 41";
 		rLen = 0;
-		rLoc = 2169;
+		rLoc = 2135;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 0;
@@ -2579,7 +2584,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 68;
 		vrLoc = 996;
@@ -2589,7 +2594,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 41";
 		rLen = 0;
-		rLoc = 2169;
+		rLoc = 2135;
 		rType = 0;
 		vrLen = 1064;
 		vrLoc = 0;
@@ -2599,7 +2604,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2609,7 +2614,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 67;
 		vrLoc = 996;
@@ -2619,7 +2624,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2170;
+		rLoc = 2136;
 		rType = 0;
 		vrLen = 1064;
 		vrLoc = 0;
@@ -2629,7 +2634,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2639,7 +2644,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 42";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2148;
 		rType = 0;
 		vrLen = 66;
 		vrLoc = 978;
@@ -2649,7 +2654,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2659,7 +2664,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 38";
 		rLen = 0;
-		rLoc = 2121;
+		rLoc = 2087;
 		rType = 0;
 		vrLen = 1064;
 		vrLoc = 0;
@@ -2669,7 +2674,7 @@
 		comments = "'NSString' may not respond to '-capitalizeString'";
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		rLen = 0;
-		rLoc = 24;
+		rLoc = 23;
 		rType = 1;
 	};
 	4CD849E61273CD4700F74A59 /* PBXTextBookmark */ = {
@@ -2677,7 +2682,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 20";
 		rLen = 0;
-		rLoc = 872;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 170;
 		vrLoc = 467;
@@ -2687,7 +2692,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 33";
 		rLen = 0;
-		rLoc = 2050;
+		rLoc = 2016;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 0;
@@ -2697,7 +2702,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2707,7 +2712,7 @@
 		comments = "'configureAsServer' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h:47)";
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		rLen = 0;
-		rLoc = 65;
+		rLoc = 64;
 		rType = 1;
 	};
 	4CD849EE1273CD5C00F74A59 /* PBXTextBookmark */ = {
@@ -2715,7 +2720,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 32";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 196;
 		vrLoc = 827;
@@ -2725,7 +2730,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 20";
 		rLen = 0;
-		rLoc = 872;
+		rLoc = 838;
 		rType = 0;
 		vrLen = 1086;
 		vrLoc = 0;
@@ -2735,7 +2740,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2745,7 +2750,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 34";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 173;
 		vrLoc = 827;
@@ -2755,7 +2760,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2765,7 +2770,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2775,7 +2780,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 36";
 		rLen = 0;
-		rLoc = 2092;
+		rLoc = 2058;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 0;
@@ -2785,7 +2790,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2795,7 +2800,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2805,7 +2810,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 57";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1763;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 1019;
@@ -2815,7 +2820,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2825,7 +2830,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2835,7 +2840,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 68";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 953;
@@ -2845,7 +2850,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2855,7 +2860,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2865,7 +2870,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 68";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 953;
@@ -2875,7 +2880,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2885,7 +2890,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2895,7 +2900,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 69";
 		rLen = 0;
-		rLoc = 2049;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1215;
 		vrLoc = 953;
@@ -2905,7 +2910,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2915,7 +2920,7 @@
 		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
 		name = "AccentuateUs.h: 10";
 		rLen = 0;
-		rLoc = 192;
+		rLoc = 771;
 		rType = 0;
 		vrLen = 65;
 		vrLoc = 167;
@@ -2925,7 +2930,7 @@
 		comments = "Passing argument 1 of 'NSLog' from incompatible pointer type";
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		rLen = 0;
-		rLoc = 54;
+		rLoc = 53;
 		rType = 1;
 	};
 	4CD84A1A1273CE8800F74A59 /* PBXTextBookmark */ = {
@@ -2933,7 +2938,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 88;
 		vrLoc = 1587;
@@ -2943,7 +2948,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 908;
@@ -2953,7 +2958,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2963,7 +2968,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 58";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 108;
 		vrLoc = 1586;
@@ -2973,7 +2978,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 22";
 		rLen = 0;
-		rLoc = 993;
+		rLoc = 959;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 227;
@@ -2983,7 +2988,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -2993,7 +2998,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 88;
 		vrLoc = 1587;
@@ -3003,7 +3008,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 21";
 		rLen = 0;
-		rLoc = 993;
+		rLoc = 959;
 		rType = 0;
 		vrLen = 1405;
 		vrLoc = 227;
@@ -3013,7 +3018,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3023,7 +3028,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 57";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 108;
 		vrLoc = 1586;
@@ -3033,7 +3038,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 49";
 		rLen = 0;
-		rLoc = 1683;
+		rLoc = 1649;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 1098;
@@ -3043,7 +3048,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3053,7 +3058,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 57";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 108;
 		vrLoc = 1586;
@@ -3063,7 +3068,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 72";
 		rLen = 0;
-		rLoc = 2098;
+		rLoc = 2064;
 		rType = 0;
 		vrLen = 1144;
 		vrLoc = 1019;
@@ -3073,7 +3078,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3083,7 +3088,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 55";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 102;
 		vrLoc = 1570;
@@ -3093,7 +3098,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 53";
 		rLen = 0;
-		rLoc = 1723;
+		rLoc = 1689;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 472;
@@ -3103,7 +3108,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3113,7 +3118,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 55";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 102;
 		vrLoc = 1570;
@@ -3123,7 +3128,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 53";
 		rLen = 0;
-		rLoc = 1723;
+		rLoc = 1689;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 472;
@@ -3133,7 +3138,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3143,7 +3148,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 55";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 106;
 		vrLoc = 1570;
@@ -3153,7 +3158,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 53";
 		rLen = 0;
-		rLoc = 1723;
+		rLoc = 1689;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 258;
@@ -3163,7 +3168,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3173,7 +3178,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 1570;
@@ -3183,7 +3188,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 54";
 		rLen = 0;
-		rLoc = 1781;
+		rLoc = 1747;
 		rType = 0;
 		vrLen = 1483;
 		vrLoc = 258;
@@ -3193,7 +3198,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3203,7 +3208,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 1570;
@@ -3213,7 +3218,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 67";
 		rLen = 0;
-		rLoc = 1960;
+		rLoc = 1926;
 		rType = 0;
 		vrLen = 1288;
 		vrLoc = 953;
@@ -3223,7 +3228,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3233,7 +3238,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 1570;
@@ -3243,7 +3248,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 67";
 		rLen = 0;
-		rLoc = 1960;
+		rLoc = 1926;
 		rType = 0;
 		vrLen = 1288;
 		vrLoc = 953;
@@ -3253,7 +3258,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3263,7 +3268,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 162;
 		vrLoc = 1570;
@@ -3273,7 +3278,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 66";
 		rLen = 0;
-		rLoc = 1960;
+		rLoc = 1926;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 953;
@@ -3283,7 +3288,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3293,7 +3298,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 194;
 		vrLoc = 1570;
@@ -3303,7 +3308,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1475;
 		vrLoc = 300;
@@ -3313,7 +3318,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3323,7 +3328,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 202;
 		vrLoc = 1570;
@@ -3333,7 +3338,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1483;
 		vrLoc = 300;
@@ -3343,7 +3348,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3353,7 +3358,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 202;
 		vrLoc = 1570;
@@ -3363,7 +3368,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 51";
 		rLen = 0;
-		rLoc = 1510;
+		rLoc = 2260;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 611;
@@ -3373,7 +3378,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 63";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 886;
@@ -3383,7 +3388,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1428;
 		vrLoc = 202;
@@ -3393,7 +3398,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 202;
 		vrLoc = 1570;
@@ -3403,7 +3408,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 63";
 		rLen = 0;
-		rLoc = 1652;
+		rLoc = 2402;
 		rType = 0;
 		vrLen = 1252;
 		vrLoc = 886;
@@ -3413,7 +3418,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1428;
 		vrLoc = 202;
@@ -3423,7 +3428,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 202;
 		vrLoc = 1570;
@@ -3433,7 +3438,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 64";
 		rLen = 0;
-		rLoc = 2106;
+		rLoc = 2856;
 		rType = 0;
 		vrLen = 1283;
 		vrLoc = 783;
@@ -3443,7 +3448,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1428;
 		vrLoc = 202;
@@ -3453,7 +3458,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 202;
 		vrLoc = 1570;
@@ -3463,7 +3468,7 @@
 		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
 		name = "Info.plist: 14";
 		rLen = 0;
-		rLoc = 499;
+		rLoc = 1249;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 963;
@@ -3473,7 +3478,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1428;
 		vrLoc = 202;
@@ -3487,7 +3492,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 56";
 		rLen = 0;
-		rLoc = 1786;
+		rLoc = 1752;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 499;
@@ -3497,7 +3502,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 43";
 		rLen = 0;
-		rLoc = 1564;
+		rLoc = 1530;
 		rType = 0;
 		vrLen = 1575;
 		vrLoc = 499;
@@ -3507,7 +3512,7 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 27";
 		rLen = 10;
-		rLoc = 1202;
+		rLoc = 1168;
 		rType = 0;
 		vrLen = 1373;
 		vrLoc = 228;
@@ -3527,19 +3532,69 @@
 		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
 		name = "AccentuateUs.m: 22";
 		rLen = 0;
-		rLoc = 806;
+		rLoc = 772;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 0;
+	};
+	4CD84AC81273D7BB00F74A59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8D576317048677EA00EA77CD /* Info.plist */;
+		name = "Info.plist: 34";
+		rLen = 0;
+		rLoc = 1249;
+		rType = 0;
+		vrLen = 95;
+		vrLoc = 921;
+	};
+	4CD84AC91273D7BB00F74A59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4CD8474612736EC300F74A59 /* AccentuateUs.h */;
+		name = "AccentuateUs.h: 18";
+		rLen = 0;
+		rLoc = 745;
+		rType = 0;
+		vrLen = 6;
+		vrLoc = 811;
+	};
+	4CD84ACA1273D7BB00F74A59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
+		name = "AccentuateUs.m: 24";
+		rLen = 0;
+		rLoc = 806;
+		rType = 0;
+		vrLen = 31;
+		vrLoc = 742;
+	};
+	4CD84ACB1273D7BB00F74A59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
+		name = "AccentuateUs.m: 24";
+		rLen = 0;
+		rLoc = 806;
+		rType = 0;
+		vrLen = 30;
+		vrLoc = 742;
+	};
+	4CD84ACC1273D7BB00F74A59 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */;
+		name = "AccentuateUs.m: 64";
+		rLen = 0;
+		rLoc = 2001;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 960;
 	};
 	8D57630D048677EA00EA77CD /* accentuateus-osx-service */ = {
 		activeExec = 0;
 	};
 	8D576317048677EA00EA77CD /* Info.plist */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {726, 962}}";
-			sepNavSelRange = "{499, 0}";
-			sepNavVisRange = "{963, 1190}";
+			sepNavIntBoundsRect = "{{0, 0}, {733, 1300}}";
+			sepNavSelRange = "{1249, 0}";
+			sepNavVisRange = "{921, 95}";
 			sepNavWindowFrame = "{{22, 309}, {678, 508}}";
 		};
 	};

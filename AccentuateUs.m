@@ -53,7 +53,7 @@
 	//[pboard setString:newString forType:NSStringPboardType];
     [pboard writeObjects:[NSArray arrayWithObject:newString]];
     
-    NSLog(@"%@", newString);
+    NSLog(@"pboard: %@", [pboard stringForType:NSStringPboardType]);
     
 	return;
 }
@@ -64,7 +64,6 @@ int main(int argc, char *argv[]) {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     NSLog(@"Initialize.");
     AccentuateUs *service = [[AccentuateUs alloc] init];
-    [NSApp setServicesProvider:service];
     NSRegisterServicesProvider(service, @"accentuateus-osx-service");
     NSUpdateDynamicServices();
     

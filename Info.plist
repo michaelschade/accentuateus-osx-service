@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.accentuateus.${PRODUCT_NAME}</string>
+	<string>com.accentuateus.${PRODUCT_NAME:rfc1034Identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -48,19 +48,25 @@
             <key>NSKeyEquivalent</key>
             <dict>
                 <key>default</key>
-                <string>E</string>
+                <string>X</string>
             </dict>
             <key>NSMenuItem</key>
             <dict>
                 <key>default</key>
-                <string>Accentuate</string>
+                <string>Accentuate Text</string>
             </dict>
             <key>NSMessage</key>
             <string>accentuate</string>
             <key>NSPortName</key>
             <string>${PRODUCT_NAME}</string>
             <key>NSSendTypes</key>
-            <array><string>NSStringPboardType</string></array>
+            <array>
+                <string>NSStringPboardType</string>
+            </array>
+            <key>NSReturnTypes</key>
+            <array>
+                <string>NSStringPboardType</string>
+            </array>
         </dict>
     </array>
 </dict>

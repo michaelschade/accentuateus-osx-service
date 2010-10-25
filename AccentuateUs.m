@@ -24,13 +24,16 @@
 
 /* Abstracts Accentuate.us API calling */
 - (NSDictionary *) call:(NSDictionary *)input {
+    /* Form request JSON */
     SBJsonWriter *writer = [[SBJsonWriter alloc] init];
     NSString *js = [writer stringWithObject:input];
     [writer release];
     NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
+    /* Configure HTTP request */
     NSString *length = [NSString stringWithFormat:@"%d", [js length]];
     NSString *version = [[[NSBundle bundleWithIdentifier:@"com.accentuateus.accentuateus-osx-service"]
                           infoDictionary] valueForKey:@"CFBundleVersion"];
+    // Should supply CFNetwork/454.9 dynamically!
     NSString *ua = [NSString stringWithFormat:@"Accentuate.us/%@ CFNetwork/454.9", version];
     [request setURL:[NSURL URLWithString:@"http://ak.api.accentuate.us:8080/"]];
     [request setHTTPMethod:@"POST"];
@@ -39,6 +42,7 @@
     [request setValue:length forHTTPHeaderField:@"Content-Length"];
     [request setHTTPBody:[js dataUsingEncoding:NSUTF8StringEncoding]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    /* Parse response JSON */
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     NSString *rsp = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     NSDictionary *data = [parser objectWithString:rsp];
@@ -82,6 +86,7 @@
         langArray = [object componentsSeparatedByString:@":"];
         [langs setObject:[langArray objectAtIndex:1] forKey:[langArray objectAtIndex:0]];
     }
+    // [version, {ISO-639: Localized Name}]
     NSArray *rsp = [NSArray arrayWithObjects:[data objectForKey:@"version"], langs, nil];
     [langs release];
     return rsp;

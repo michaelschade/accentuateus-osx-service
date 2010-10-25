@@ -18,8 +18,36 @@
  */
 
 #import "AccentuateUs.h"
+#import "JSON/JSON.h"
 
 @implementation AccentuateUs
+
+- (NSString *) lift :(NSString *)text
+                lang:(NSString *)lang
+                locale:(NSString *)locale
+{
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                            text, @"text"
+                          , @"charlifter.lift", @"call"
+                          , lang, @"lang"
+                          , locale, @"locale", nil];
+    SBJsonWriter *writer = [[SBJsonWriter alloc] init];
+    NSString *js = [writer stringWithObject:dict];
+    [writer release];
+    NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
+    [request setURL:[NSURL URLWithString:@"http://ak.api.accentuate.us:8080/"]];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"Accentuate.us/0.9b5 Cocoa" forHTTPHeaderField:@"User-Agent"];
+    [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+    NSString *length = [NSString stringWithFormat:@"%d", [js length]];
+    [request setValue:length forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:[js dataUsingEncoding:NSUTF8StringEncoding]];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    NSDictionary *data = [parser objectWithString:[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]];
+    [parser release];
+    return [data objectForKey:@"text"];
+}
 
 - (void)accentuate:(NSPasteboard *)pboard
           userData:(NSString *)data
@@ -37,8 +65,6 @@
 		return;
 	}
     
-	text = [text capitalizedString];
-    
 	// Error accentuating?
 	if(!text) {
 		*error = NSLocalizedString(@"Error: Couldn't accentuate text $@.",
@@ -50,6 +76,7 @@
 	types = [NSArray arrayWithObject:NSStringPboardType];
     [pboard clearContents];
 	[pboard declareTypes:types owner:nil];
+    text = [self lift:text lang:@"ga" locale:@"en-US"];
     [pboard writeObjects:[NSArray arrayWithObject:text]];
     
 	return;

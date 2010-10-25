@@ -29,9 +29,12 @@
     [writer release];
     NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
     NSString *length = [NSString stringWithFormat:@"%d", [js length]];
+    NSString *version = [[[NSBundle bundleWithIdentifier:@"com.accentuateus.accentuateus-osx-service"]
+                          infoDictionary] valueForKey:@"CFBundleVersion"];
+    NSString *ua = [NSString stringWithFormat:@"Accentuate.us/%@ CFNetwork/454.9", version];
     [request setURL:[NSURL URLWithString:@"http://ak.api.accentuate.us:8080/"]];
     [request setHTTPMethod:@"POST"];
-    [request setValue:@"Accentuate.us/0.9b3.5 CFNetwork/454.9" forHTTPHeaderField:@"User-Agent"];
+    [request setValue:ua forHTTPHeaderField:@"User-Agent"];
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     [request setValue:length forHTTPHeaderField:@"Content-Length"];
     [request setHTTPBody:[js dataUsingEncoding:NSUTF8StringEncoding]];

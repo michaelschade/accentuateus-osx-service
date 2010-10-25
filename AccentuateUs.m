@@ -40,11 +40,14 @@
     [request setHTTPBody:[js dataUsingEncoding:NSUTF8StringEncoding]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSDictionary *data = [parser objectWithString:[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]];
+    NSString *rsp = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    NSDictionary *data = [parser objectWithString:rsp];
+    [rsp release];
     [parser release];
     return data;
 }
 
+/* Calls to add diacritics to supplied text. Error messages localized to locale. */
 - (NSString *) lift :(NSString *)text
                 lang:(NSString *)lang
               locale:(NSString *)locale {
@@ -56,6 +59,32 @@
                            ,nil];
     NSDictionary *data = [self call:input];
     return [data objectForKey:@"text"];
+}
+
+/* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */
+- (NSArray *) langs:(NSString *)version
+              locale:(NSString *)locale {
+    NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
+                            version             , @"version"
+                           ,locale              , @"locale"
+                           ,@"charlifter.langs" , @"call"
+                           ,nil];
+    NSDictionary *data = [self call:input];
+    // Parse into ["ISO-639:Localized Name", ...]
+    NSArray *langsArray = [[data objectForKey:@"text"] componentsSeparatedByString:@"\n"];
+    NSEnumerator *e = [langsArray objectEnumerator];
+    id object;
+    // Holds {ISO-639: Localized Name, ...}
+    NSMutableDictionary *langs = [[NSMutableDictionary alloc] init];
+    NSArray *langArray;
+    while (object = [e nextObject]) {
+        // Parse into [ISO-639, Localized Name]
+        langArray = [object componentsSeparatedByString:@":"];
+        [langs setObject:[langArray objectAtIndex:1] forKey:[langArray objectAtIndex:0]];
+    }
+    NSArray *rsp = [NSArray arrayWithObjects:[data objectForKey:@"version"], langs, nil];
+    [langs release];
+    return rsp;
 }
 
 - (void)accentuate:(NSPasteboard *)pboard

@@ -20,6 +20,12 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AccentuateUs : NSObject {
+    @private
+    NSString *locale;
 }
+
+- (NSDictionary *) call:(NSDictionary *)input;
+- (NSArray *) langs:(NSString *)version;
+- (NSString *) lift:(NSString *)text lang:(NSString *)lang;
 
 @end

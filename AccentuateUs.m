@@ -53,8 +53,7 @@
 
 /* Calls to add diacritics to supplied text. Error messages localized to locale. */
 - (NSString *) lift :(NSString *)text
-                lang:(NSString *)lang
-              locale:(NSString *)locale {
+                lang:(NSString *)lang {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             text                , @"text"
                            ,@"charlifter.lift"  , @"call"
@@ -66,8 +65,7 @@
 }
 
 /* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */
-- (NSArray *) langs:(NSString *)version
-              locale:(NSString *)locale {
+- (NSArray *) langs:(NSString *)version {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             version             , @"version"
                            ,locale              , @"locale"
@@ -119,7 +117,7 @@
 	types = [NSArray arrayWithObject:NSStringPboardType];
     [pboard clearContents];
 	[pboard declareTypes:types owner:nil];
-    text = [self lift:text lang:@"ga" locale:@"en-US"];
+    text = [self lift:text lang:@"ga"];
     [pboard writeObjects:[NSArray arrayWithObject:text]];
     
 	return;

@@ -22,30 +22,36 @@
 
 @implementation AccentuateUs
 
-- (NSString *) lift :(NSString *)text
-                lang:(NSString *)lang
-                locale:(NSString *)locale
-{
-    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                            text, @"text"
-                          , @"charlifter.lift", @"call"
-                          , lang, @"lang"
-                          , locale, @"locale", nil];
+/* Abstracts Accentuate.us API calling */
+- (NSDictionary *) call:(NSDictionary *)input {
     SBJsonWriter *writer = [[SBJsonWriter alloc] init];
     NSString *js = [writer stringWithObject:dict];
     [writer release];
     NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
+    NSString *length = [NSString stringWithFormat:@"%d", [js length]];
     [request setURL:[NSURL URLWithString:@"http://ak.api.accentuate.us:8080/"]];
     [request setHTTPMethod:@"POST"];
-    [request setValue:@"Accentuate.us/0.9b5 Cocoa" forHTTPHeaderField:@"User-Agent"];
+    [request setValue:@"Accentuate.us/0.9b3.5 CFNetwork/454.9" forHTTPHeaderField:@"User-Agent"];
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
-    NSString *length = [NSString stringWithFormat:@"%d", [js length]];
     [request setValue:length forHTTPHeaderField:@"Content-Length"];
     [request setHTTPBody:[js dataUsingEncoding:NSUTF8StringEncoding]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     NSDictionary *data = [parser objectWithString:[[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding]];
     [parser release];
+    return data;
+}
+
+- (NSString *) lift :(NSString *)text
+                lang:(NSString *)lang
+              locale:(NSString *)locale {
+    NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
+                            text                , @"text"
+                           ,@"charlifter.lift"  , @"call"
+                           ,lang                , @"lang"
+                           ,locale              , @"locale"
+                           ,nil];
+    [self call:input];
     return [data objectForKey:@"text"];
 }
 

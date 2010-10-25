@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4C24A8C31275E48900F95168</string>
+						<string>4C24A8CF1275E73700F95168</string>
 						<key>history</key>
 						<array>
 							<string>4C06E7111274B4A2006B2AF5</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4C24A8C41275E48900F95168</string>
+						<string>4C24A8D01275E73700F95168</string>
 						<key>history</key>
 						<array>
 							<string>4C24A7FC1275C4DA00F95168</string>
@@ -312,6 +312,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -404,7 +406,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4C24A8C21275E48900F95168</string>
+										<string>4C24A8CE1275E73700F95168</string>
 										<key>history</key>
 										<array>
 											<string>4CD847B91273882F00F74A59</string>

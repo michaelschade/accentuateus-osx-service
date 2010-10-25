@@ -25,7 +25,7 @@
 /* Abstracts Accentuate.us API calling */
 - (NSDictionary *) call:(NSDictionary *)input {
     SBJsonWriter *writer = [[SBJsonWriter alloc] init];
-    NSString *js = [writer stringWithObject:dict];
+    NSString *js = [writer stringWithObject:input];
     [writer release];
     NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
     NSString *length = [NSString stringWithFormat:@"%d", [js length]];
@@ -51,7 +51,7 @@
                            ,lang                , @"lang"
                            ,locale              , @"locale"
                            ,nil];
-    [self call:input];
+    NSDictionary *data = [self call:input];
     return [data objectForKey:@"text"];
 }
 

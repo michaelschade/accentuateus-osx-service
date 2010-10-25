@@ -14,6 +14,8 @@
 		4C24A8131275C7C400F95168 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A80E1275C7C400F95168 /* SBJsonWriter.m */; };
 		4C24A81A1275C7E100F95168 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4C24A8191275C7E100F95168 /* LICENSE */; };
 		4C24A8D21275E75300F95168 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C24A8D11275E75300F95168 /* Icon.icns */; };
+		4C24A9751276492400F95168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A9741276492400F95168 /* main.m */; };
+		4C24A98A12764A4C00F95168 /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A98912764A4C00F95168 /* Services.m */; };
 		4CD8474812736EC300F74A59 /* AccentuateUs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */; };
 		4CD84AC61273D7A800F74A59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD84AC51273D7A800F74A59 /* Cocoa.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -34,6 +36,9 @@
 		4C24A80E1275C7C400F95168 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		4C24A8191275C7E100F95168 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4C24A8D11275E75300F95168 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		4C24A9741276492400F95168 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C24A98812764A4C00F95168 /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
+		4C24A98912764A4C00F95168 /* Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Services.m; sourceTree = "<group>"; };
 		4CD8474612736EC300F74A59 /* AccentuateUs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccentuateUs.h; sourceTree = "<group>"; };
 		4CD8474712736EC300F74A59 /* AccentuateUs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccentuateUs.m; sourceTree = "<group>"; };
 		4CD84AC51273D7A800F74A59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -88,6 +93,9 @@
 			children = (
 				4CD8474612736EC300F74A59 /* AccentuateUs.h */,
 				4CD8474712736EC300F74A59 /* AccentuateUs.m */,
+				4C24A9741276492400F95168 /* main.m */,
+				4C24A98812764A4C00F95168 /* Services.h */,
+				4C24A98912764A4C00F95168 /* Services.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -181,6 +189,8 @@
 				4C24A8111275C7C400F95168 /* SBJsonBase.m in Sources */,
 				4C24A8121275C7C400F95168 /* SBJsonParser.m in Sources */,
 				4C24A8131275C7C400F95168 /* SBJsonWriter.m in Sources */,
+				4C24A9751276492400F95168 /* main.m in Sources */,
+				4C24A98A12764A4C00F95168 /* Services.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

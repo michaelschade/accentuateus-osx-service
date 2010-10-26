@@ -28,7 +28,13 @@
 
 @synthesize locale;
 
-- (id)initWithLocale:(NSString *)input {
+- (id) init {
+    [super init];
+    self.locale = @"";
+    return self;
+}
+
+- (id) initWithLocale:(NSString *)input {
     if (self = [super init]) {
         [self setLocale:input];
     }
@@ -49,13 +55,11 @@
     // Should supply CFNetwork/454.9 dynamically!
     NSString *ua = [NSString stringWithFormat:@"Accentuate.us/%@ CFNetwork/454.9", version];
     NSString *url;
+    // Check if lang specified for language-specific request URL
     if ([input objectForKey:@"lang"] != nil) {
         url = [NSString stringWithFormat:@"http://%@.api.accentuate.us:8080/"
                , [input objectForKey:@"lang"]];
-    } else {
-        url = @"http://api.accentuate.us:8080/";
-    }
-    NSLog(@"%@", url);
+    } else { url = @"http://api.accentuate.us:8080/"; }
     [request setURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     [request setValue:ua forHTTPHeaderField:@"User-Agent"];

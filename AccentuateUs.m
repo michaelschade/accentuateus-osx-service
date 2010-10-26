@@ -26,15 +26,13 @@
 
 @implementation AccentuateUs
 
+@synthesize locale;
+
 - (id)initWithLocale:(NSString *)input {
     if (self = [super init]) {
         [self setLocale:input];
     }
     return self;
-}
-
-- (void) setLocale: (NSString *)input {
-    locale = input;
 }
 
 /* Abstracts Accentuate.us API calling */
@@ -73,7 +71,7 @@
                             text                , @"text"
                            ,@"charlifter.lift"  , @"call"
                            ,lang                , @"lang"
-                           ,locale              , @"locale"
+                           ,self.locale         , @"locale"
                            ,nil];
     NSDictionary *data = [self call:input];
     return [data objectForKey:@"text"];
@@ -83,7 +81,7 @@
 - (NSArray *) langs:(NSString *)version {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             version             , @"version"
-                           ,locale              , @"locale"
+                           ,self.locale         , @"locale"
                            ,@"charlifter.langs" , @"call"
                            ,nil];
     NSDictionary *data = [self call:input];
@@ -112,9 +110,14 @@
                             @"charlifter.feedback"  , @"call"
                            ,text                    , @"text"
                            ,lang                    , @"lang"
-                           ,locale                  , @"locale"
+                           ,self.locale             , @"locale"
                            ,nil];
     [self call:input];
+}
+
+- (void) dealloc {
+    self.locale = nil;
+    [super dealloc];
 }
 
 @end

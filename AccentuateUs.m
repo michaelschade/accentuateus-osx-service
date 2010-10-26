@@ -20,7 +20,22 @@
 #import "AccentuateUs.h"
 #import "JSON/JSON.h"
 
+/*
+ All calls are implemented as documented in the official API at http://accentuate.us/api
+ */
+
 @implementation AccentuateUs
+
+- (id)initWithLocale:(NSString *)input {
+    if (self = [super init]) {
+        [self setLocale:input];
+    }
+    return self;
+}
+
+- (void) setLocale: (NSString *)input {
+    locale = input;
+}
 
 /* Abstracts Accentuate.us API calling */
 - (NSDictionary *) call:(NSDictionary *)input {
@@ -88,6 +103,18 @@
     NSArray *rsp = [NSArray arrayWithObjects:[data objectForKey:@"version"], langs, nil];
     [langs release];
     return rsp;
+}
+
+/* Submits corrected text for language lang. */
+- (void) feedback:(NSString *)text
+             lang:(NSString *)lang {
+    NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
+                            @"charlifter.feedback"  , @"call"
+                           ,text                    , @"text"
+                           ,lang                    , @"lang"
+                           ,locale                  , @"locale"
+                           ,nil];
+    [self call:input];
 }
 
 @end

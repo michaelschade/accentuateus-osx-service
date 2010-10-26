@@ -48,7 +48,15 @@
                           infoDictionary] valueForKey:@"CFBundleVersion"];
     // Should supply CFNetwork/454.9 dynamically!
     NSString *ua = [NSString stringWithFormat:@"Accentuate.us/%@ CFNetwork/454.9", version];
-    [request setURL:[NSURL URLWithString:@"http://ak.api.accentuate.us:8080/"]];
+    NSString *url;
+    if ([input objectForKey:@"lang"] != nil) {
+        url = [NSString stringWithFormat:@"http://%@.api.accentuate.us:8080/"
+               , [input objectForKey:@"lang"]];
+    } else {
+        url = @"http://api.accentuate.us:8080/";
+    }
+    NSLog(@"%@", url);
+    [request setURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     [request setValue:ua forHTTPHeaderField:@"User-Agent"];
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];

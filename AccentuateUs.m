@@ -26,23 +26,13 @@
 
 @implementation AccentuateUs
 
-@synthesize locale;
-
 - (id) init {
     [super init];
-    self.locale = @"";
-    return self;
-}
-
-- (id) initWithLocale:(NSString *)input {
-    if (self = [super init]) {
-        [self setLocale:input];
-    }
     return self;
 }
 
 /* Abstracts Accentuate.us API calling */
-- (NSDictionary *) call:(NSDictionary *)input {
++ (NSDictionary *) call:(NSDictionary *)input {
     /* Form request JSON */
     SBJsonWriter *writer = [[SBJsonWriter alloc] init];
     NSString *js = [writer stringWithObject:input];
@@ -77,23 +67,25 @@
 }
 
 /* Calls to add diacritics to supplied text. Error messages localized to locale. */
-- (NSString *) lift :(NSString *)text
-                lang:(NSString *)lang {
++ (NSString *)  lift:(NSString *)text
+                lang:(NSString *)lang
+              locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             text                , @"text"
                            ,@"charlifter.lift"  , @"call"
                            ,lang                , @"lang"
-                           ,self.locale         , @"locale"
+                           ,locale              , @"locale"
                            ,nil];
     NSDictionary *data = [self call:input];
     return [data objectForKey:@"text"];
 }
 
 /* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */
-- (NSArray *) langs:(NSString *)version {
++ (NSArray *) langs:(NSString *)version
+             locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             version             , @"version"
-                           ,self.locale         , @"locale"
+                           ,locale              , @"locale"
                            ,@"charlifter.langs" , @"call"
                            ,nil];
     NSDictionary *data = [self call:input];
@@ -116,20 +108,16 @@
 }
 
 /* Submits corrected text for language lang. */
-- (void) feedback:(NSString *)text
-             lang:(NSString *)lang {
++ (void) feedback:(NSString *)text
+             lang:(NSString *)lang
+           locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             @"charlifter.feedback"  , @"call"
                            ,text                    , @"text"
                            ,lang                    , @"lang"
-                           ,self.locale             , @"locale"
+                           ,locale                  , @"locale"
                            ,nil];
     [self call:input];
-}
-
-- (void) dealloc {
-    self.locale = nil;
-    [super dealloc];
 }
 
 @end

@@ -38,7 +38,7 @@
 			<string>00000000-0000-0000-0000-000000000000</string>
 		</array>
 	</dict>
-	<key>CFPlugInUnloadFunction</key>
+	<key>CFPlugÍnÚnloadFunction</key>
 	<string></string>
 	<key>LSBackgroundOnly</key>
 	<string>1</string>
@@ -53,7 +53,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>Accentuate Text</string>
+				<string>AccentuateUs/Accentuate Selected Text</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>accentuate</string>

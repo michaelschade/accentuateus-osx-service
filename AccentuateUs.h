@@ -20,15 +20,13 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AccentuateUs : NSObject {
-    NSString *locale;
 }
 
-@property (retain) NSString* locale;
++ (NSDictionary *) call:(NSDictionary *)input;
 
-- (id) initWithLocale:(NSString *)input;
-- (NSDictionary *) call:(NSDictionary *)input;
-- (NSArray *) langs:(NSString *)version;
-- (NSString *) lift:(NSString *)text lang:(NSString *)lang;
-- (void) feedback:(NSString *)text lang:(NSString *)lang;
+/* Stateless */
++ (NSArray *)   langs:(NSString *)version   locale:(NSString *)loc;
++ (NSString *)  lift:(NSString *)text       lang:(NSString *)lang locale:(NSString *)loc;
++ (void)        feedback:(NSString *)text   lang:(NSString *)lang locale:(NSString *)loc;
 
 @end

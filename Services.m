@@ -48,11 +48,8 @@
 	types = [NSArray arrayWithObject:NSStringPboardType];
     [pboard clearContents];
 	[pboard declareTypes:types owner:nil];
-    [AccentuateUs langs:@"0" locale:@""];
-    text = @"??";//[aus lift:text lang:@"ga"];
+    text = [AccentuateUs lift:text lang:@"ga" locale:@"en-US"];
     [pboard writeObjects:[NSArray arrayWithObject:text]];
-        NSLog(@"asdfasdf");
-    
 	return;
 }
 

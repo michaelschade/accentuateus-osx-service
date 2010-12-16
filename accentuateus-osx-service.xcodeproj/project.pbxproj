@@ -16,6 +16,12 @@
 		4C24A8D21275E75300F95168 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C24A8D11275E75300F95168 /* Icon.icns */; };
 		4C24A9751276492400F95168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A9741276492400F95168 /* main.m */; };
 		4C24A98A12764A4C00F95168 /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A98912764A4C00F95168 /* Services.m */; };
+		4C505E0D12B99EC4000E89AD /* AccentuateUs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */; };
+		4C505E0E12B99EC5000E89AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A9741276492400F95168 /* main.m */; };
+		4C505E0F12B99EC6000E89AD /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A98912764A4C00F95168 /* Services.m */; };
+		4C505E5A12B9A3B4000E89AD /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A80C1275C7C400F95168 /* SBJsonParser.m */; };
+		4C505E5B12B9A3B5000E89AD /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A80E1275C7C400F95168 /* SBJsonWriter.m */; };
+		4C505E5E12B9A3BB000E89AD /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24A80A1275C7C400F95168 /* SBJsonBase.m */; };
 		4CD8474812736EC300F74A59 /* AccentuateUs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8474712736EC300F74A59 /* AccentuateUs.m */; };
 		4CD84AC61273D7A800F74A59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD84AC51273D7A800F74A59 /* Cocoa.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
@@ -39,6 +45,7 @@
 		4C24A9741276492400F95168 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C24A98812764A4C00F95168 /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
 		4C24A98912764A4C00F95168 /* Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Services.m; sourceTree = "<group>"; };
+		4C505DD312B98E64000E89AD /* simple-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD8474612736EC300F74A59 /* AccentuateUs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccentuateUs.h; sourceTree = "<group>"; };
 		4CD8474712736EC300F74A59 /* AccentuateUs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccentuateUs.m; sourceTree = "<group>"; };
 		4CD84AC51273D7A800F74A59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -47,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4C505DD112B98E64000E89AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D576313048677EA00EA77CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				8D576316048677EA00EA77CD /* accentuateus-osx-service.service */,
+				4C505DD312B98E64000E89AD /* simple-test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +145,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4C505DD212B98E64000E89AD /* simple-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C505DE012B98E77000E89AD /* Build configuration list for PBXNativeTarget "simple-test" */;
+			buildPhases = (
+				4C505DD012B98E64000E89AD /* Sources */,
+				4C505DD112B98E64000E89AD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simple-test";
+			productName = "simple-test";
+			productReference = 4C505DD312B98E64000E89AD /* simple-test */;
+			productType = "com.apple.product-type.tool";
+		};
 		8D57630D048677EA00EA77CD /* accentuateus-osx-service */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "accentuateus-osx-service" */;
@@ -161,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				8D57630D048677EA00EA77CD /* accentuateus-osx-service */,
+				4C505DD212B98E64000E89AD /* simple-test */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +211,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4C505DD012B98E64000E89AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C505E0D12B99EC4000E89AD /* AccentuateUs.m in Sources */,
+				4C505E0E12B99EC5000E89AD /* main.m in Sources */,
+				4C505E0F12B99EC6000E89AD /* Services.m in Sources */,
+				4C505E5A12B9A3B4000E89AD /* SBJsonParser.m in Sources */,
+				4C505E5B12B9A3B5000E89AD /* SBJsonWriter.m in Sources */,
+				4C505E5E12B9A3BB000E89AD /* SBJsonBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D576311048677EA00EA77CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +332,54 @@
 			};
 			name = Release;
 		};
+		4C505DD512B98E64000E89AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "simple-test";
+			};
+			name = Debug;
+		};
+		4C505DD612B98E64000E89AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "simple-test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +397,15 @@
 			buildConfigurations = (
 				1DEB911F08733D790010E9CD /* Debug */,
 				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C505DE012B98E77000E89AD /* Build configuration list for PBXNativeTarget "simple-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C505DD512B98E64000E89AD /* Debug */,
+				4C505DD612B98E64000E89AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

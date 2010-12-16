@@ -17,12 +17,24 @@
  along with Accentuate.us. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#import "AccentuateUs.h"
 #import "Services.h"
 
 int main(int argc, char *argv[]) {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     Services *service = [[Services alloc] init];
     NSRegisterServicesProvider(service, @"accentuateus-osx-service");
+    
+    AccentuateUs *jl = [[AccentuateUs alloc] initWithLang:@"ht"];
+    AccentuateUs *ll = [[AccentuateUs alloc] initWithLangAndLocale:@"ht" locale:@"es"];
+    
+    NSLog(@"nothing: %@", [AccentuateUs lift:@"le la we andey" lang:@"ht" locale:@"ga"]);
+    NSLog(@"Just ht: %@", [jl lift:@"le la we andey"]);
+    NSLog(@"ht + es: %@", [ll lift:@"le la we andey"]);
+    
+    NSLog(@"nothing: %@", [AccentuateUs langs:@"0" locale:@"ga"]);
+    NSLog(@"Just ht: %@", [jl langs:@"0"]);
+    NSLog(@"ht + es: %@", [ll langs:@"0"]);
     
     NS_DURING [[NSRunLoop currentRunLoop] run];
     NS_HANDLER

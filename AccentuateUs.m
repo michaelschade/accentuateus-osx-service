@@ -107,21 +107,26 @@
                            ,@"charlifter.langs" , @"call"
                            ,nil];
     NSDictionary *data = [self call:input];
-    // Parse into ["ISO-639:Localized Name", ...]
-    NSArray *langsArray = [[data objectForKey:@"text"] componentsSeparatedByString:@"\n"];
-    NSEnumerator *e = [langsArray objectEnumerator];
-    id object;
-    // Holds {ISO-639: Localized Name, ...}
-    NSMutableDictionary *langs = [[NSMutableDictionary alloc] init];
-    NSArray *langArray;
-    while (object = [e nextObject]) {
-        // Parse into [ISO-639, Localized Name]
-        langArray = [object componentsSeparatedByString:@":"];
-        [langs setObject:[langArray objectAtIndex:1] forKey:[langArray objectAtIndex:0]];
+    NSArray *rsp;
+    if ([[data objectForKey:@"code"] integerValue] == 200) { // Up to date
+        rsp = [NSArray arrayWithObjects:[NSNumber numberWithBool:NO], [data objectForKey:@"version"], nil];
+    } else { // Out of date
+        // Parse into ["ISO-639:Localized Name", ...]
+        NSArray *langsArray = [[data objectForKey:@"text"] componentsSeparatedByString:@"\n"];
+        NSEnumerator *e = [langsArray objectEnumerator];
+        id object;
+        // Holds {ISO-639: Localized Name, ...}
+        NSMutableDictionary *langs = [[NSMutableDictionary alloc] init];
+        NSArray *langArray;
+        while (object = [e nextObject]) {
+            // Parse into [ISO-639, Localized Name]
+            langArray = [object componentsSeparatedByString:@":"];
+            [langs setObject:[langArray objectAtIndex:1] forKey:[langArray objectAtIndex:0]];
+        }
+        // [version, {ISO-639: Localized Name}]
+        rsp = [NSArray arrayWithObjects:[NSNumber numberWithBool:YES], [data objectForKey:@"version"], langs, nil];
+        [langs release];
     }
-    // [version, {ISO-639: Localized Name}]
-    NSArray *rsp = [NSArray arrayWithObjects:[data objectForKey:@"version"], langs, nil];
-    [langs release];
     return rsp;
 }
 

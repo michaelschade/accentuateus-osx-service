@@ -36,6 +36,8 @@ int main(int argc, char *argv[]) {
     NSLog(@"Just ht: %@", [jl langs:@"0"]);
     NSLog(@"ht + es: %@", [ll langs:@"0"]);
     
+    NSLog(@"up to date: %@", [ll langs:@"12"]);
+    
     NS_DURING [[NSRunLoop currentRunLoop] run];
     NS_HANDLER
     NS_ENDHANDLER

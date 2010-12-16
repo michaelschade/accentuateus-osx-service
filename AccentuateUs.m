@@ -26,8 +26,21 @@
 
 @implementation AccentuateUs
 
-- (id) init {
-    [super init];
+@synthesize lang, locale;
+
+- (id) initWithLang:(NSString *)_lang {
+    if (self = [super init]) {
+        [self setLang:_lang];
+        [self setLocale:@""];
+    }
+    return self;
+}
+
+- (id) initWithLangAndLocale:(NSString *)_lang locale:(NSString *)_locale {
+    if (self = [super init]) {
+        [self setLang:_lang];
+        [self setLocale:_locale];
+    }
     return self;
 }
 
@@ -71,7 +84,7 @@
                 lang:(NSString *)lang
               locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
-                            text                , @"text"
+                           text                , @"text"
                            ,@"charlifter.lift"  , @"call"
                            ,lang                , @"lang"
                            ,locale              , @"locale"
@@ -80,11 +93,16 @@
     return [data objectForKey:@"text"];
 }
 
+/* Simplified version of langs for instantiated class. */
+- (NSArray *) langs:(NSString *)version {
+    return [AccentuateUs langs:version locale:self.locale];
+}
+
 /* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */
 + (NSArray *) langs:(NSString *)version
              locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
-                            version             , @"version"
+                           version             , @"version"
                            ,locale              , @"locale"
                            ,@"charlifter.langs" , @"call"
                            ,nil];
@@ -107,17 +125,27 @@
     return rsp;
 }
 
+/* Simplified version of lift for instantiated class. */
+- (NSString *) lift:(NSString *)text {
+    return [AccentuateUs lift:text lang:self.lang locale:self.locale];
+}
+
 /* Submits corrected text for language lang. */
 + (void) feedback:(NSString *)text
              lang:(NSString *)lang
            locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
-                            @"charlifter.feedback"  , @"call"
+                           @"charlifter.feedback"  , @"call"
                            ,text                    , @"text"
                            ,lang                    , @"lang"
                            ,locale                  , @"locale"
                            ,nil];
     [self call:input];
+}
+
+/* Simplified version of feedback for instantiated class. */
+- (void) feedback:(NSString *)text {
+    return [AccentuateUs feedback:text lang:self.lang locale:self.locale];
 }
 
 @end

@@ -28,14 +28,6 @@
 
 @synthesize lang, locale;
 
-- (id) initWithLang:(NSString *)_lang {
-    if (self = [super init]) {
-        [self setLang:_lang];
-        [self setLocale:@""];
-    }
-    return self;
-}
-
 - (id) initWithLangAndLocale:(NSString *)_lang locale:(NSString *)_locale {
     if (self = [super init]) {
         [self setLang:_lang];
@@ -44,8 +36,12 @@
     return self;
 }
 
+- (id) initWithLang:(NSString *)_lang {
+    return [self initWithLangAndLocale:_lang locale:@""];
+}
+
 /* Abstracts Accentuate.us API calling */
-+ (NSDictionary *) call:(NSDictionary *)input {
++ (NSDictionary *) call:(NSDictionary *)input error:(NSError **)error {
     /* Form request JSON */
     SBJsonWriter *writer = [[SBJsonWriter alloc] init];
     NSString *js = [writer stringWithObject:input];
@@ -69,11 +65,30 @@
     [request setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     [request setValue:length forHTTPHeaderField:@"Content-Length"];
     [request setHTTPBody:[js dataUsingEncoding:NSUTF8StringEncoding]];
-    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSError *err = nil;
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&err];
+    if (response == nil) { // connection creation/download failed
+        *error = [NSError errorWithDomain:@"com.accentuateus.error"
+                                    code:AUSRequestError
+                                userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+                                           err, NSUnderlyingErrorKey
+                                          ,nil]
+                 ];
+        return nil;
+    }
     /* Parse response JSON */
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     NSString *rsp = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
-    NSDictionary *data = [parser objectWithString:rsp];
+    NSDictionary *data = [parser objectWithString:rsp error:&err];
+    if (data == nil) { // could not parse data
+        *error = [NSError errorWithDomain:@"com.accentuateus.error"
+                                    code:AUSRequestError
+                                userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+                                           err, NSUnderlyingErrorKey
+                                          ,nil]
+                 ];
+        return nil;
+    }
     [rsp release];
     [parser release];
     return data;
@@ -82,31 +97,47 @@
 /* Calls to add diacritics to supplied text. Error messages localized to locale. */
 + (NSString *)  lift:(NSString *)text
                 lang:(NSString *)lang
-              locale:(NSString *)locale {
+              locale:(NSString *)locale
+               error:(NSError **)error {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             text                , @"text"
                            ,@"charlifter.lift"  , @"call"
                            ,lang                , @"lang"
                            ,locale              , @"locale"
                            ,nil];
-    NSDictionary *data = [self call:input];
-    return [data objectForKey:@"code"];
+    NSDictionary *data = [self call:input error:error];
+    if (data == nil) { // Error in calling
+        return nil;
+    } else if ([[data objectForKey:@"code"] integerValue] == AUSLiftError) { // Error in response
+        *error = [NSError errorWithDomain:@"com.accentuateus.error"
+                                     code:AUSLiftError
+                                 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+                                            [data objectForKey:@"text"], NSLocalizedDescriptionKey
+                                           ,nil]
+                  ];
+        return nil;
+    }
+    return [data objectForKey:@"text"];
 }
 
-/* Simplified version of langs for instantiated class. */
-- (NSArray *) langs:(NSString *)version {
-    return [AccentuateUs langs:version locale:self.locale];
+/* Simplified version of lift for instantiated class. */
+- (NSString *) lift:(NSString *)text error:(NSError **)error {
+    return [AccentuateUs lift:text lang:self.lang locale:self.locale error:error];
 }
 
 /* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */
 + (NSArray *) langs:(NSString *)version
-             locale:(NSString *)locale {
+             locale:(NSString *)locale
+              error:(NSError **)error {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             version             , @"version"
                            ,locale              , @"locale"
                            ,@"charlifter.langs" , @"call"
                            ,nil];
-    NSDictionary *data = [self call:input];
+    NSDictionary *data = [self call:input error:error];
+    if (data == nil) { // Error in calling
+        return nil;
+    }
     NSArray *rsp;
     if ([[data objectForKey:@"code"] integerValue] == AUSLangsUpToDate) { // Up to date
         rsp = [NSArray arrayWithObjects:[NSNumber numberWithBool:NO], [data objectForKey:@"version"], nil];
@@ -130,27 +161,39 @@
     return rsp;
 }
 
-/* Simplified version of lift for instantiated class. */
-- (NSString *) lift:(NSString *)text {
-    return [AccentuateUs lift:text lang:self.lang locale:self.locale];
+/* Simplified version of langs for instantiated class. */
+- (NSArray *) langs:(NSString *)version error:(NSError **)error {
+    return [AccentuateUs langs:version locale:self.locale error:error];
 }
 
 /* Submits corrected text for language lang. */
 + (void) feedback:(NSString *)text
              lang:(NSString *)lang
-           locale:(NSString *)locale {
+           locale:(NSString *)locale
+            error:(NSError **)error {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             @"charlifter.feedback"  , @"call"
                            ,text                    , @"text"
                            ,lang                    , @"lang"
                            ,locale                  , @"locale"
                            ,nil];
-    [self call:input];
+    NSDictionary *data = [self call:input error:error];
+    if (data == nil) { // Error in calling
+        return;
+    } else if ([[data objectForKey:@"code"] integerValue] == AUSFeedbackError) { // Error in response
+        *error = [NSError errorWithDomain:@"com.accentuateus.error"
+                                     code:AUSFeedbackError
+                                 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+                                           [data objectForKey:@"text"], NSLocalizedDescriptionKey
+                                           ,nil]
+                  ];
+        return;
+    }
 }
 
 /* Simplified version of feedback for instantiated class. */
-- (void) feedback:(NSString *)text {
-    return [AccentuateUs feedback:text lang:self.lang locale:self.locale];
+- (void) feedback:(NSString *)text error:(NSError **)error {
+    return [AccentuateUs feedback:text lang:self.lang locale:self.locale error:error];
 }
 
 @end

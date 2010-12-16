@@ -21,18 +21,21 @@
 
 /* Response codes */
 
+// HTTP, Parsing, etc. problem
+#define AUSRequestError     500
+
 // Langs
-#define AUSLangsUnderdated 100
-#define AUSLangsOverdated  400
-#define AUSLangsUpToDate   200
+#define AUSLangsUnderdated  100
+#define AUSLangsOverdated   400
+#define AUSLangsUpToDate    200
 
 // Lift
-#define AUSLiftSuccess 200
-#define AUSLiftError   400
+#define AUSLiftSuccess      200
+#define AUSLiftError        400
 
 // Feedback
-#define AUSFeedbackSuccess 100
-#define AUSFeedbackError   400
+#define AUSFeedbackSuccess  100
+#define AUSFeedbackError    400
 
 @interface AccentuateUs : NSObject {
     NSString* lang;
@@ -45,16 +48,16 @@
 - (id) initWithLang:(NSString *)_lang;
 - (id) initWithLangAndLocale:(NSString *)_lang locale:(NSString *)_locale;
 
-+ (NSDictionary *) call:(NSDictionary *)input;
++ (NSDictionary *) call:(NSDictionary *)input error:(NSError **)error;
 
 /* Stateless */
-+ (NSArray *)   langs:(NSString *)version   locale:(NSString *)loc;
-+ (NSString *)  lift:(NSString *)text       lang:(NSString *)lang locale:(NSString *)loc;
-+ (void)        feedback:(NSString *)text   lang:(NSString *)lang locale:(NSString *)loc;
++ (NSArray *)   langs:(NSString *)version   locale:(NSString *)loc error:(NSError **)error;
++ (NSString *)  lift:(NSString *)text       lang:(NSString *)lang  locale:(NSString *)loc error:(NSError **)error;
++ (void)        feedback:(NSString *)text   lang:(NSString *)lang  locale:(NSString *)loc error:(NSError **)error;
 
 /* Stateful */
-- (NSArray *)   langs:(NSString *)version;
-- (NSString *)  lift:(NSString *)text;
-- (void)        feedback:(NSString *)text;
+- (NSArray *)   langs:(NSString *)version error:(NSError **)error;
+- (NSString *)  lift:(NSString *)text     error:(NSError **)error;
+- (void)        feedback:(NSString *)text error:(NSError **)error;
 
 @end

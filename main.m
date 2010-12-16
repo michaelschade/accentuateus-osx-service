@@ -26,17 +26,22 @@ int main(int argc, char *argv[]) {
     NSRegisterServicesProvider(service, @"accentuateus-osx-service");
     
     AccentuateUs *jl = [[AccentuateUs alloc] initWithLang:@"ht"];
-    AccentuateUs *ll = [[AccentuateUs alloc] initWithLangAndLocale:@"ht" locale:@"es"];
+    AccentuateUs *ll = [[AccentuateUs alloc] initWithLangAndLocale:@"ht" locale:@"ht"];
     
-    NSLog(@"nothing: %@", [AccentuateUs lift:@"le la we andey" lang:@"ht" locale:@"ga"]);
-    NSLog(@"Just ht: %@", [jl lift:@"le la we andey"]);
-    NSLog(@"ht + es: %@", [ll lift:@"le la we andey"]);
+    NSError *e1=nil, *e2=nil, *e3=nil;
     
-    NSLog(@"nothing: %@", [AccentuateUs langs:@"0" locale:@"ga"]);
-    NSLog(@"Just ht: %@", [jl langs:@"0"]);
-    NSLog(@"ht + es: %@", [ll langs:@"0"]);
+    NSLog(@"nothing: %@", [AccentuateUs lift:@"le la we andey" lang:@"ht" locale:@"ga" error:&e1]);
+    NSLog(@"Localized Description: %@", [e1 localizedDescription]);
+    NSLog(@"Just ht: %@", [jl lift:@"le la we andey" error:&e2]);
+    NSLog(@"Localized Description: %@", [e2 localizedDescription]);
+    NSLog(@"ht + ht: %@", [ll lift:@"le la we andey" error:&e3]);
+    NSLog(@"Localized Description: %@", [e3 localizedDescription]);
     
-    NSLog(@"up to date: %@", [ll langs:@"12"]);
+    //NSLog(@"nothing: %@", [AccentuateUs langs:@"0" locale:@"ga" error:&e]);
+    //NSLog(@"Just ht: %@", [jl langs:@"0" error:&e]);
+    //NSLog(@"ht + es: %@", [ll langs:@"0" error:&e]);
+    
+    //NSLog(@"up to date: %@", [ll langs:@"12" error:&e]);
     
     NS_DURING [[NSRunLoop currentRunLoop] run];
     NS_HANDLER

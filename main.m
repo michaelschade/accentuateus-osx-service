@@ -34,12 +34,13 @@ int main(int argc, char *argv[]) {
     NSLog(@"Localized Description: %@", [e1 localizedDescription]);
     NSLog(@"Just ht: %@", [jl lift:@"le la we andey" error:&e2]);
     NSLog(@"Localized Description: %@", [e2 localizedDescription]);
-    NSLog(@"ht + ht: %@", [ll lift:@"le la we andey" error:&e3]);
-    NSLog(@"Localized Description: %@", [e3 localizedDescription]);
+    //NSLog(@"ht + ht: %@", [ll lift:@"le la we andey" error:&e3]);
+    //NSLog(@"Localized Description: %@", [e3 localizedDescription]);
     
     //NSLog(@"nothing: %@", [AccentuateUs langs:@"0" locale:@"ga" error:&e]);
     //NSLog(@"Just ht: %@", [jl langs:@"0" error:&e]);
-    //NSLog(@"ht + es: %@", [ll langs:@"0" error:&e]);
+    NSLog(@"ht + es: %@", [ll langs:@"40" error:&e3]);
+    NSLog(@"Localized Description: %@", [e3 localizedDescription]);
     
     //NSLog(@"up to date: %@", [ll langs:@"12" error:&e]);
     

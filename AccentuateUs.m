@@ -140,7 +140,11 @@
     }
     NSArray *rsp;
     if ([[data objectForKey:@"code"] integerValue] == AUSLangsUpToDate) { // Up to date
-        rsp = [NSArray arrayWithObjects:[NSNumber numberWithBool:NO], [data objectForKey:@"version"], nil];
+        // [Integer:code, Integer:version]
+        rsp = [NSArray arrayWithObjects:
+                 (NSNumber *)[data objectForKey:@"code"]
+               , (NSNumber *)[data objectForKey:@"version"]
+               , nil];
     } else { // Out of date
         // Parse into ["ISO-639:Localized Name", ...]
         NSArray *langsArray = [[data objectForKey:@"text"] componentsSeparatedByString:@"\n"];
@@ -155,7 +159,11 @@
             [langs setObject:[langArray objectAtIndex:1] forKey:[langArray objectAtIndex:0]];
         }
         // [version, {ISO-639: Localized Name}]
-        rsp = [NSArray arrayWithObjects:[NSNumber numberWithBool:YES], [data objectForKey:@"version"], langs, nil];
+        rsp = [NSArray arrayWithObjects:
+                 (NSNumber *)[data objectForKey:@"code"]
+               , (NSNumber *)[data objectForKey:@"version"]
+               , langs
+               , nil];
         [langs release];
     }
     return rsp;

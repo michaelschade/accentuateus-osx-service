@@ -19,6 +19,21 @@
 
 #import <Cocoa/Cocoa.h>
 
+/* Response codes */
+
+// Langs
+#define AUSLangsUnderdated 100
+#define AUSLangsOverdated  400
+#define AUSLangsUpToDate   200
+
+// Lift
+#define AUSLiftSuccess 200
+#define AUSLiftError   400
+
+// Feedback
+#define AUSFeedbackSuccess 100
+#define AUSFeedbackError   400
+
 @interface AccentuateUs : NSObject {
     NSString* lang;
     NSString* locale;

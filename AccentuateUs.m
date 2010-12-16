@@ -108,7 +108,7 @@
                            ,nil];
     NSDictionary *data = [self call:input];
     NSArray *rsp;
-    if ([[data objectForKey:@"code"] integerValue] == 200) { // Up to date
+    if ([[data objectForKey:@"code"] integerValue] == AUSLangsUpToDate) { // Up to date
         rsp = [NSArray arrayWithObjects:[NSNumber numberWithBool:NO], [data objectForKey:@"version"], nil];
     } else { // Out of date
         // Parse into ["ISO-639:Localized Name", ...]

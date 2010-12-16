@@ -84,13 +84,13 @@
                 lang:(NSString *)lang
               locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
-                           text                , @"text"
+                            text                , @"text"
                            ,@"charlifter.lift"  , @"call"
                            ,lang                , @"lang"
                            ,locale              , @"locale"
                            ,nil];
     NSDictionary *data = [self call:input];
-    return [data objectForKey:@"text"];
+    return [data objectForKey:@"code"];
 }
 
 /* Simplified version of langs for instantiated class. */
@@ -102,7 +102,7 @@
 + (NSArray *) langs:(NSString *)version
              locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
-                           version             , @"version"
+                            version             , @"version"
                            ,locale              , @"locale"
                            ,@"charlifter.langs" , @"call"
                            ,nil];
@@ -135,7 +135,7 @@
              lang:(NSString *)lang
            locale:(NSString *)locale {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
-                           @"charlifter.feedback"  , @"call"
+                            @"charlifter.feedback"  , @"call"
                            ,text                    , @"text"
                            ,lang                    , @"lang"
                            ,locale                  , @"locale"

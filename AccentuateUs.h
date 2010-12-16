@@ -29,9 +29,9 @@
 #define AUSLangsOverdated   400
 #define AUSLangsUpToDate    200
 
-// Lift
-#define AUSLiftSuccess      200
-#define AUSLiftError        400
+// Accentuate
+#define AUSAccentuateSuccess 200
+#define AUSAccentuateError   400
 
 // Feedback
 #define AUSFeedbackSuccess  100
@@ -52,12 +52,12 @@
 
 /* Stateless */
 + (NSArray *)   langs:(NSString *)version   locale:(NSString *)loc error:(NSError **)error;
-+ (NSString *)  lift:(NSString *)text       lang:(NSString *)lang  locale:(NSString *)loc error:(NSError **)error;
++ (NSString *)  accentuate:(NSString *)text lang:(NSString *)lang  locale:(NSString *)loc error:(NSError **)error;
 + (void)        feedback:(NSString *)text   lang:(NSString *)lang  locale:(NSString *)loc error:(NSError **)error;
 
 /* Stateful */
-- (NSArray *)   langs:(NSString *)version error:(NSError **)error;
-- (NSString *)  lift:(NSString *)text     error:(NSError **)error;
-- (void)        feedback:(NSString *)text error:(NSError **)error;
+- (NSArray *)   langs:(NSString *)version   error:(NSError **)error;
+- (NSString *)  accentuate:(NSString *)text error:(NSError **)error;
+- (void)        feedback:(NSString *)text   error:(NSError **)error;
 
 @end

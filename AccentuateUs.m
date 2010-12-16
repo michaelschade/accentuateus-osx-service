@@ -95,10 +95,10 @@
 }
 
 /* Calls to add diacritics to supplied text. Error messages localized to locale. */
-+ (NSString *)  lift:(NSString *)text
-                lang:(NSString *)lang
-              locale:(NSString *)locale
-               error:(NSError **)error {
++ (NSString *)  accentuate:(NSString *)text
+                      lang:(NSString *)lang
+                    locale:(NSString *)locale
+                     error:(NSError **)error {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             text                , @"text"
                            ,@"charlifter.lift"  , @"call"
@@ -108,9 +108,9 @@
     NSDictionary *data = [self call:input error:error];
     if (data == nil) { // Error in calling
         return nil;
-    } else if ([[data objectForKey:@"code"] integerValue] == AUSLiftError) { // Error in response
+    } else if ([[data objectForKey:@"code"] integerValue] == AUSAccentuateError) { // Error in response
         *error = [NSError errorWithDomain:@"com.accentuateus.error"
-                                     code:AUSLiftError
+                                     code:AUSAccentuateError
                                  userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
                                             [data objectForKey:@"text"], NSLocalizedDescriptionKey
                                            ,nil]
@@ -120,9 +120,9 @@
     return [data objectForKey:@"text"];
 }
 
-/* Simplified version of lift for instantiated class. */
-- (NSString *) lift:(NSString *)text error:(NSError **)error {
-    return [AccentuateUs lift:text lang:self.lang locale:self.locale error:error];
+/* Simplified version of accentuate for instantiated class. */
+- (NSString *) accentuate:(NSString *)text error:(NSError **)error {
+    return [AccentuateUs accentuate:text lang:self.lang locale:self.locale error:error];
 }
 
 /* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */

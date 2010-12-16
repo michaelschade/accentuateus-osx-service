@@ -30,11 +30,11 @@ int main(int argc, char *argv[]) {
     
     NSError *e1=nil, *e2=nil, *e3=nil;
     
-    NSLog(@"nothing: %@", [AccentuateUs lift:@"le la we andey" lang:@"ht" locale:@"ga" error:&e1]);
+    NSLog(@"nothing: %@", [AccentuateUs accentuate:@"le la we andey" lang:@"ht" locale:@"ga" error:&e1]);
     NSLog(@"Localized Description: %@", [e1 localizedDescription]);
-    NSLog(@"Just ht: %@", [jl lift:@"le la we andey" error:&e2]);
+    NSLog(@"Just ht: %@", [jl accentuate:@"le la we andey" error:&e2]);
     NSLog(@"Localized Description: %@", [e2 localizedDescription]);
-    //NSLog(@"ht + ht: %@", [ll lift:@"le la we andey" error:&e3]);
+    //NSLog(@"ht + ht: %@", [ll accentuate:@"le la we andey" error:&e3]);
     //NSLog(@"Localized Description: %@", [e3 localizedDescription]);
     
     //NSLog(@"nothing: %@", [AccentuateUs langs:@"0" locale:@"ga" error:&e]);

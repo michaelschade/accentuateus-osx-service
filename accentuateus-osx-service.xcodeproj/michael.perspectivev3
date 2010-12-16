@@ -202,46 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>4C505DDD12B98E77000E89AD</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>AccentuateUs.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>4C505DDE12B98E77000E89AD</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>AccentuateUs.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>4C5060D912BAB86A000E89AD</string>
-						<key>history</key>
-						<array>
-							<string>4C505DCE12B98DE5000E89AD</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {630, 375}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>1062 612 630 416 0 0 1680 1028 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>4C505F2012BA70CD000E89AD</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>main.m</string>
@@ -256,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4C5060DA12BAB86A000E89AD</string>
+						<string>4C5060E912BABA13000E89AD</string>
 						<key>history</key>
 						<array>
 							<string>4C50607612BAB116000E89AD</string>
@@ -282,6 +242,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>4C505DDD12B98E77000E89AD</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>AccentuateUs.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>4C505DDE12B98E77000E89AD</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>AccentuateUs.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>4C5060EA12BABA13000E89AD</string>
+						<key>history</key>
+						<array>
+							<string>4C505DCE12B98DE5000E89AD</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {630, 375}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>1062 612 630 416 0 0 1680 1028 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>4C505DDA12B98E77000E89AD</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>AccentuateUs.m</string>
@@ -296,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4C5060DB12BAB86A000E89AD</string>
+						<string>4C5060EB12BABA13000E89AD</string>
 						<key>history</key>
 						<array>
 							<string>4C50609D12BAB51A000E89AD</string>
@@ -450,7 +450,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4C5060D812BAB86A000E89AD</string>
+										<string>4C5060E812BABA13000E89AD</string>
 										<key>history</key>
 										<array>
 											<string>4C505EC512BA5F0A000E89AD</string>
@@ -786,13 +786,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4C5060DC12BAB86A000E89AD</string>
 		<string>4C505E7112B9A3F3000E89AD</string>
 		<string>4C505E7212B9A3F3000E89AD</string>
-		<string>/Users/michael/accentuateus/accentuateus-osx-service/accentuateus-osx-service.xcodeproj</string>
 		<string>4C505DDA12B98E77000E89AD</string>
-		<string>4C505F2012BA70CD000E89AD</string>
 		<string>4C505DDD12B98E77000E89AD</string>
+		<string>4C505F2012BA70CD000E89AD</string>
+		<string>/Users/michael/accentuateus/accentuateus-osx-service/accentuateus-osx-service.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>978 112 698 526 0 0 1680 1028 </string>

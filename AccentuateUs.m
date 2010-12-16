@@ -26,22 +26,23 @@
 
 @implementation AccentuateUs
 
-@synthesize lang, locale;
+@synthesize lang, locale, client;
 
-- (id) initWithLangAndLocale:(NSString *)_lang locale:(NSString *)_locale {
+- (id) initWithLangLocaleAndClient:(NSString *)_lang locale:(NSString *)_locale client:(NSString *)_client {
     if (self = [super init]) {
         [self setLang:_lang];
         [self setLocale:_locale];
+        [self setClient:_client];
     }
     return self;
 }
 
-- (id) initWithLang:(NSString *)_lang {
-    return [self initWithLangAndLocale:_lang locale:@""];
+- (id) initWithLangAndClient:(NSString *)_lang client:(NSString *)_client {
+    return [self initWithLangLocaleAndClient:_lang locale:@"" client:_client];
 }
 
 /* Abstracts Accentuate.us API calling */
-+ (NSDictionary *) call:(NSDictionary *)input error:(NSError **)error {
++ (NSDictionary *) call:(NSDictionary *)input error:(NSError **)error client:(NSString *)client {
     /* Form request JSON */
     SBJsonWriter *writer = [[SBJsonWriter alloc] init];
     NSString *js = [writer stringWithObject:input];
@@ -49,10 +50,8 @@
     NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
     /* Configure HTTP request */
     NSString *length = [NSString stringWithFormat:@"%d", [js length]];
-    NSString *version = [[[NSBundle bundleWithIdentifier:@"com.accentuateus.accentuateus-osx-service"]
-                          infoDictionary] valueForKey:@"CFBundleVersion"];
-    // Should supply CFNetwork/454.9 dynamically!
-    NSString *ua = [NSString stringWithFormat:@"Accentuate.us/%@ CFNetwork/454.9", version];
+    NSString *ua = [NSString stringWithFormat:@"Accentuate.us/%@", AUSVersion];
+    if (client != @"") ua = [ua stringByAppendingFormat:@" %@", client];
     NSString *url;
     // Check if lang specified for language-specific request URL
     if ([input objectForKey:@"lang"] != nil) {
@@ -82,8 +81,8 @@
     NSDictionary *data = [parser objectWithString:rsp error:&err];
     if (data == nil) { // could not parse data
         *error = [NSError errorWithDomain:@"com.accentuateus.error"
-                                    code:AUSRequestError
-                                userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
+                                     code:AUSRequestError
+                                 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
                                            err, NSUnderlyingErrorKey
                                           ,nil]
                  ];
@@ -94,10 +93,15 @@
     return data;
 }
 
+- (NSDictionary *) call:(NSDictionary *)input error:(NSError **)error {
+    return [AccentuateUs call:input error:error client:@""];
+}
+
 /* Calls to add diacritics to supplied text. Error messages localized to locale. */
 + (NSString *)  accentuate:(NSString *)text
                       lang:(NSString *)lang
                     locale:(NSString *)locale
+                    client:(NSString *)client
                      error:(NSError **)error {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             text                , @"text"
@@ -105,7 +109,7 @@
                            ,lang                , @"lang"
                            ,locale              , @"locale"
                            ,nil];
-    NSDictionary *data = [self call:input error:error];
+    NSDictionary *data = [self call:input error:error client:client];
     if (data == nil) { // Error in calling
         return nil;
     } else if ([[data objectForKey:@"code"] integerValue] == AUSAccentuateError) { // Error in response
@@ -122,19 +126,20 @@
 
 /* Simplified version of accentuate for instantiated class. */
 - (NSString *) accentuate:(NSString *)text error:(NSError **)error {
-    return [AccentuateUs accentuate:text lang:self.lang locale:self.locale error:error];
+    return [AccentuateUs accentuate:text lang:self.lang locale:self.locale client:self.client error:error];
 }
 
 /* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */
 + (NSArray *) langs:(NSString *)version
              locale:(NSString *)locale
+             client:(NSString *)client
               error:(NSError **)error {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             version             , @"version"
                            ,locale              , @"locale"
                            ,@"charlifter.langs" , @"call"
                            ,nil];
-    NSDictionary *data = [self call:input error:error];
+    NSDictionary *data = [self call:input error:error client:client];
     if (data == nil) { // Error in calling
         return nil;
     }
@@ -171,13 +176,14 @@
 
 /* Simplified version of langs for instantiated class. */
 - (NSArray *) langs:(NSString *)version error:(NSError **)error {
-    return [AccentuateUs langs:version locale:self.locale error:error];
+    return [AccentuateUs langs:version locale:self.locale client:self.client error:error];
 }
 
 /* Submits corrected text for language lang. */
 + (void) feedback:(NSString *)text
              lang:(NSString *)lang
            locale:(NSString *)locale
+           client:(NSString *)client
             error:(NSError **)error {
     NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
                             @"charlifter.feedback"  , @"call"
@@ -185,7 +191,7 @@
                            ,lang                    , @"lang"
                            ,locale                  , @"locale"
                            ,nil];
-    NSDictionary *data = [self call:input error:error];
+    NSDictionary *data = [self call:input error:error client:client];
     if (data == nil) { // Error in calling
         return;
     } else if ([[data objectForKey:@"code"] integerValue] == AUSFeedbackError) { // Error in response
@@ -201,7 +207,7 @@
 
 /* Simplified version of feedback for instantiated class. */
 - (void) feedback:(NSString *)text error:(NSError **)error {
-    return [AccentuateUs feedback:text lang:self.lang locale:self.locale error:error];
+    return [AccentuateUs feedback:text lang:self.lang locale:self.locale client:self.client error:error];
 }
 
 @end

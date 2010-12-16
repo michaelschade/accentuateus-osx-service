@@ -25,24 +25,24 @@ int main(int argc, char *argv[]) {
     Services *service = [[Services alloc] init];
     NSRegisterServicesProvider(service, @"accentuateus-osx-service");
     
-    AccentuateUs *jl = [[AccentuateUs alloc] initWithLang:@"ht"];
-    AccentuateUs *ll = [[AccentuateUs alloc] initWithLangAndLocale:@"ht" locale:@"ht"];
+    AccentuateUs *jl = [[AccentuateUs alloc] initWithLangAndClient:@"ht" client:@"Client/24 Test/42"];
+    AccentuateUs *ll = [[AccentuateUs alloc] initWithLangLocaleAndClient:@"ht" locale:@"ht" client:@"ht+ht/7"];
     
-    NSError *e1=nil, *e2=nil, *e3=nil;
+    NSError *e1=nil, *e2=nil, *e3=nil, *e4=nil;
     
-    NSLog(@"nothing: %@", [AccentuateUs accentuate:@"le la we andey" lang:@"ht" locale:@"ga" error:&e1]);
+    NSLog(@"nothing: %@", [AccentuateUs accentuate:@"le la we andey" lang:@"ht" locale:@"ga" client:@"Foo/1.42" error:&e1]);
     NSLog(@"Localized Description: %@", [e1 localizedDescription]);
     NSLog(@"Just ht: %@", [jl accentuate:@"le la we andey" error:&e2]);
     NSLog(@"Localized Description: %@", [e2 localizedDescription]);
-    //NSLog(@"ht + ht: %@", [ll accentuate:@"le la we andey" error:&e3]);
-    //NSLog(@"Localized Description: %@", [e3 localizedDescription]);
-    
-    //NSLog(@"nothing: %@", [AccentuateUs langs:@"0" locale:@"ga" error:&e]);
-    //NSLog(@"Just ht: %@", [jl langs:@"0" error:&e]);
-    NSLog(@"ht + es: %@", [ll langs:@"40" error:&e3]);
+    NSLog(@"ht + ht: %@", [ll accentuate:@"le la we andey" error:&e3]);
     NSLog(@"Localized Description: %@", [e3 localizedDescription]);
     
-    //NSLog(@"up to date: %@", [ll langs:@"12" error:&e]);
+    NSLog(@"nothing: %@", [AccentuateUs langs:@"0" locale:@"ga" client:@"" error:nil]);
+    NSLog(@"Just ht: %@", [jl langs:@"0" error:nil]);
+    NSLog(@"ht + es: %@", [ll langs:@"40" error:&e4]);
+    NSLog(@"Localized Description: %@", [e4 localizedDescription]);
+    
+    NSLog(@"up to date: %@", [ll langs:@"12" error:nil]);
     
     NS_DURING [[NSRunLoop currentRunLoop] run];
     NS_HANDLER

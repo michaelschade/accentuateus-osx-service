@@ -202,7 +202,7 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>4C505F2012BA70CD000E89AD</string>
+				<string>4C50618312BACCE1000E89AD</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>main.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
@@ -210,16 +210,16 @@
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>4C505F2112BA70CD000E89AD</string>
+						<string>4C50618412BACCE1000E89AD</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>main.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4C5060E912BABA13000E89AD</string>
+						<string>4C5061A512BACD63000E89AD</string>
 						<key>history</key>
 						<array>
-							<string>4C50607612BAB116000E89AD</string>
+							<string>4C50618B12BACD01000E89AD</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -256,10 +256,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4C5060EA12BABA13000E89AD</string>
+						<string>4C5061A612BACD63000E89AD</string>
 						<key>history</key>
 						<array>
-							<string>4C505DCE12B98DE5000E89AD</string>
+							<string>4C5060F412BAC1DD000E89AD</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -296,10 +296,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4C5060EB12BABA13000E89AD</string>
+						<string>4C5061A712BACD63000E89AD</string>
 						<key>history</key>
 						<array>
-							<string>4C50609D12BAB51A000E89AD</string>
+							<string>4C50612412BAC5E5000E89AD</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -311,11 +311,11 @@
 			<key>Geometry</key>
 			<dict>
 				<key>Frame</key>
-				<string>{{0, 20}, {803, 874}}</string>
+				<string>{{0, 20}, {1215, 878}}</string>
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>0 113 803 915 0 0 1680 1028 </string>
+				<string>0 109 1215 919 0 0 1680 1028 </string>
 			</dict>
 		</dict>
 	</array>
@@ -390,9 +390,6 @@
 								<string>089C166AFE841209C02AAC07</string>
 								<string>08FB77AFFE84173DC02AAC07</string>
 								<string>089C167CFE841241C02AAC07</string>
-								<string>089C1671FE841209C02AAC07</string>
-								<string>4C24A8031275C7C400F95168</string>
-								<string>4CD84AC51273D7A800F74A59</string>
 								<string>19C28FB6FE9D52B211CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
@@ -400,9 +397,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
-									<integer>12</integer>
-									<integer>11</integer>
+									<integer>4</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -438,7 +434,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>4CD8473212736D7700F74A59</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AccentuateUs.m</string>
+								<string>main.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -446,26 +442,26 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>4CD8473312736D7700F74A59</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AccentuateUs.m</string>
+										<string>main.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4C5060E812BABA13000E89AD</string>
+										<string>4C5061A412BACD63000E89AD</string>
 										<key>history</key>
 										<array>
 											<string>4C505EC512BA5F0A000E89AD</string>
 											<string>4C505EC612BA5F0A000E89AD</string>
 											<string>4C505EC812BA5F0A000E89AD</string>
 											<string>4C505EC912BA5F0A000E89AD</string>
-											<string>4C505ECC12BA5F0A000E89AD</string>
-											<string>4C505ECE12BA5F0A000E89AD</string>
 											<string>4C505F4112BA845A000E89AD</string>
-											<string>4C505F8C12BAA2EE000E89AD</string>
 											<string>4C505FEE12BAA81D000E89AD</string>
 											<string>4C505FEF12BAA81D000E89AD</string>
 											<string>4C50603412BAAD45000E89AD</string>
-											<string>4C5060A012BAB574000E89AD</string>
-											<string>4C5060A112BAB574000E89AD</string>
+											<string>4C50610D12BAC349000E89AD</string>
+											<string>4C50617512BACC7E000E89AD</string>
+											<string>4C50617612BACC7E000E89AD</string>
+											<string>4C50617712BACC7E000E89AD</string>
+											<string>4C50619112BACD1B000E89AD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -788,10 +784,10 @@
 	<array>
 		<string>4C505E7112B9A3F3000E89AD</string>
 		<string>4C505E7212B9A3F3000E89AD</string>
+		<string>/Users/michael/accentuateus/accentuateus-osx-service/accentuateus-osx-service.xcodeproj</string>
 		<string>4C505DDA12B98E77000E89AD</string>
 		<string>4C505DDD12B98E77000E89AD</string>
-		<string>4C505F2012BA70CD000E89AD</string>
-		<string>/Users/michael/accentuateus/accentuateus-osx-service/accentuateus-osx-service.xcodeproj</string>
+		<string>4C50618312BACCE1000E89AD</string>
 	</array>
 	<key>WindowString</key>
 	<string>978 112 698 526 0 0 1680 1028 </string>

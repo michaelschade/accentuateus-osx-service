@@ -48,11 +48,9 @@
 @property (retain) NSString* locale;
 @property (retain) NSString* client;
 
+/* Init */
 - (id) initWithLangAndClient:(NSString *)_lang client:(NSString *)_client;
 - (id) initWithLangLocaleAndClient:(NSString *)_lang locale:(NSString *)_locale client:(NSString *)_client;
-
-- (NSDictionary *) call:(NSDictionary *)input error:(NSError **)error;
-+ (NSDictionary *) call:(NSDictionary *)input error:(NSError **)error client:(NSString *)client;
 
 /* Stateless */
 + (NSArray *)   langs:(NSString *)version   locale:(NSString *)loc client:(NSString *)client error:(NSError **)error;

@@ -129,7 +129,9 @@
     return [AccentuateUs accentuate:text lang:self.lang locale:self.locale client:self.client error:error];
 }
 
-/* Returns an array of [version, {ISO-639: Localized Name}]. Error messages localized to locale. */
+/* Returns an array of [code, version] with an optional third element of
+   {ISO-639: Localized Name} depending on whether or not an updated list was
+   sent. Error messages localized to locale when possible. */
 + (NSArray *) langs:(NSString *)version
              locale:(NSString *)locale
              client:(NSString *)client
@@ -145,7 +147,7 @@
     }
     NSArray *rsp;
     if ([[data objectForKey:@"code"] integerValue] == AUSLangsUpToDate) { // Up to date
-        // [Integer:code, Integer:version]
+        // [code, version]
         rsp = [NSArray arrayWithObjects:
                  (NSNumber *)[data objectForKey:@"code"]
                , (NSNumber *)[data objectForKey:@"version"]
@@ -163,7 +165,7 @@
             langArray = [object componentsSeparatedByString:@":"];
             [langs setObject:[langArray objectAtIndex:1] forKey:[langArray objectAtIndex:0]];
         }
-        // [version, {ISO-639: Localized Name}]
+        // [code, version, {ISO-639: Localized Name}]
         rsp = [NSArray arrayWithObjects:
                  (NSNumber *)[data objectForKey:@"code"]
                , (NSNumber *)[data objectForKey:@"version"]

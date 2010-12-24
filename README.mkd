@@ -38,6 +38,6 @@ code along these lines:
                              locale:@"en-US"
                              client:@"Example/0.1a"
         ];
-    NSLog(@"Accentuated text: %@", [aus accentuate:@""];
+    NSLog(@"Accentuated text: %@", [aus accentuate:@"Is i an Ghaeilge an chead teanga oifigiuil"];
     [aus release];
 

@@ -22,3 +22,22 @@ Introduction
 The Accentuate.us Apple OS X Service menu entry allows you to accentuate text
 from within any application without the application explicitly integrating with
 the Accentuate.us service.
+
+API Implementation
+==================
+The service is not complete and, due to some inherent limitations in OS X
+services, you may wish to implement Accentuate.us in your app in a particular
+way. `AccentuateUs.h` and `AccentuateUs.m` provide an implementation of our
+API, complete with error handling.
+
+Making a call to our API is as simple as including `AccentuateUs.h` and using
+code along these lines:
+
+    AccentuateUs *aus = [[AccentuateUs alloc]
+        initWithLangLocaleAndClient:@"ga"
+                             locale:@"en-US"
+                             client:@"Example/0.1a"
+        ];
+    NSLog(@"Accentuated text: %@", [aus accentuate:@""];
+    [aus release];
+

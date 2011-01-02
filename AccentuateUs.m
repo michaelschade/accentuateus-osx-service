@@ -212,4 +212,11 @@
     return [AccentuateUs feedback:text lang:self.lang locale:self.locale client:self.client error:error];
 }
 
+- (void) dealloc {
+    [lang release];
+    [locale release];
+    [client release];
+    [super dealloc];
+}
+
 @end

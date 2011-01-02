@@ -17,6 +17,7 @@
  along with Accentuate.us. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#import "AccentuateUs.h"
 #import <Cocoa/Cocoa.h>
 
 @interface Services : NSObject {

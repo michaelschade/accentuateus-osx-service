@@ -18,7 +18,6 @@
  */
 
 #import "Services.h"
-#import "AccentuateUs.h"
 
 @implementation Services
 - (void)accentuate:(NSPasteboard *)pboard

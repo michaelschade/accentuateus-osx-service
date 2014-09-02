@@ -38,7 +38,7 @@
 			<string>00000000-0000-0000-0000-000000000000</string>
 		</array>
 	</dict>
-	<key>CFPlugÍnÚnloadFunction</key>
+	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>LSBackgroundOnly</key>
 	<string>1</string>
